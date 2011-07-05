@@ -16,13 +16,13 @@ class Standoff_Grommet_Assembly(Assembly):
 
         # Shift grommet into position
         grommet_z_shift = 0.5*self.params.vibration_grommet['height']
-        grommet = Translate(grommet,v=(0,0,grommet_z_shift))
-        grommet = Color(grommet, rgba=self.params.vibration_grommet['color'])
+        grommet.translate(v=(0,0,grommet_z_shift))
+        grommet.color(rgba=self.params.vibration_grommet['color'])
 
         # Shift standoff into position
         standoff_z_shift = 0.5*self.params.hallway_standoff['length'] + 2*grommet_z_shift
-        standoff = Translate(standoff, v=(0,0,standoff_z_shift))
-        standoff = Color(standoff, rgba=self.params.hallway_standoff['color'])
+        standoff.translate(v=(0,0,standoff_z_shift))
+        standoff.color(rgba=self.params.hallway_standoff['color'])
         self.parts = {
                 'standoff' : standoff,
                 'grommet'  : grommet,

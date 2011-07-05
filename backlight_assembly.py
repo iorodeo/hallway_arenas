@@ -24,11 +24,11 @@ class Backlight_Assembly(Assembly):
         x_shift = 0.5*self.params.backlight['mount_hole_space']
         for k,obj in backlight_standoff.iteritems():
             sign = 1 if k=='pos' else -1
-            backlight_standoff[k] = Translate(obj,v=(sign*x_shift,0,z_shift))
+            backlight_standoff[k].translate(v=(sign*x_shift,0,z_shift))
 
         # Shift backlight into position
         z_shift = self.params.backlight_standoff['length'] + 0.5*self.params.backlight['thickness']
-        backlight = Translate(backlight,v=(0,0,z_shift))
+        backlight.translate(v=(0,0,z_shift))
 
         # Shift diffuser standoffs into position
         z_shift = 0.5*self.params.diffuser_standoff['length']
@@ -37,14 +37,14 @@ class Backlight_Assembly(Assembly):
         x_shift = 0.5*self.params.backlight['mount_hole_space']
         for k,obj in diffuser_standoff.iteritems():
             sign = 1 if k=='pos' else -1
-            diffuser_standoff[k] = Translate(obj,v=(sign*x_shift,0,z_shift))
+            diffuser_standoff[k].translate(v=(sign*x_shift,0,z_shift))
 
         # Shift diffuser into position
         z_shift = 0.5*self.params.diffuser['thickness']
         z_shift += self.params.diffuser_standoff['length']
         z_shift += self.params.backlight_standoff['length']
         z_shift += self.params.backlight['thickness']
-        diffuser = Translate(diffuser,v=(0,0,z_shift))
+        diffuser.translate(v=(0,0,z_shift))
 
         # Create parts dictionary
         self.parts = {}

@@ -27,7 +27,7 @@ class Panels_PCB_Assembly(Assembly):
 
         # Create components
         panels_pcb = Panels_PCB(**self.params.panels_pcb)
-        panels_pcb = Color(panels_pcb, self.params.panels_pcb['color'])
+        panels_pcb.color(self.params.panels_pcb['color'])
         header_list = []
         panel_list = []
         panel_offset = 0.5*panels_pcb_width - (0.5*panel_width + panel_header_offset) 
@@ -45,13 +45,13 @@ class Panels_PCB_Assembly(Assembly):
         for x_pos in panels_pos:
             # Create header
             header_temp = Header(**self.params.header)
-            header_temp = Translate(header_temp,v=(x_pos,y_pos_header,z_pos_header))
-            header_temp = Color(header_temp,rgba=self.params.header['color'])
+            header_temp.translate(v=(x_pos,y_pos_header,z_pos_header))
+            header_temp.color(rgba=self.params.header['color'])
             header_list.append(header_temp)
 
             # Create panel
             panel_temp = Panel(**self.params.panel)
-            panel_temp = Translate(panel_temp,v=(x_pos,y_pos_panels,z_pos_panels))
+            panel_temp.translate(v=(x_pos,y_pos_panels,z_pos_panels))
             panel_list.append(panel_temp)
 
         # Create parts dictionary

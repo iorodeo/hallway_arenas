@@ -32,6 +32,7 @@ class System_Assembly(Assembly):
 if __name__ == '__main__':
     import params
     assem = System_Assembly(params=params)
+    #assem.write_stl()
     prog = SCAD_Prog()
     prog.fn = 50
     prog.add(assem)
