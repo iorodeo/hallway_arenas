@@ -26,14 +26,15 @@ class Hallway_Assembly(Assembly):
         plate_z_shift = standoff_assembly_pos.z_max
         plate_assembly.translate(v=(0,0,plate_z_shift))
 
-        standoff_x_shift = 0.5*self.params.hallway_bottom_plate['mount_hole_spacing'] 
+        # Translate standoffs into position
+        standoff_x_shift = 0.5*self.params.hallway_bottom_plate['mount_hole_space'] 
         standoff_assembly_pos.translate(v=(standoff_x_shift, 0, 0))
         standoff_assembly_neg.translate(v=(-standoff_x_shift, 0, 0))
 
         # Rotate and translate pager motors into positon
         pager_motor_pos = Rotate(pager_motor_pos,a=-90,v=(0,1,0))
         pager_motor_neg = Rotate(pager_motor_neg,a=90,v=(0,1,0))
-        motor_x_shift = 0.5*self.params.hallway_bottom_plate['mount_hole_spacing'] 
+        motor_x_shift = 0.5*self.params.hallway_bottom_plate['mount_hole_space'] 
         motor_x_shift -= self.params.hallway_bottom_plate['motor_cutout_gap']
         motor_x_shift -=  0.5*self.params.hallway_bottom_plate['motor_cutout_length']
         motor_z_shift = self.params.hallway_standoff['length']

@@ -12,15 +12,6 @@ arena_tube = {
         'color'     : (0.9, 0.9, 0.9, 0.8),
         } 
 
-hallway_standoff =  {
-        'diameter'      : 0.5*INCH2MM, 
-        'length'        : 2.0*INCH2MM,
-        'hole_diameter' : 0.2*INCH2MM,  # 1/4-20
-        'type'          : 'male-female',
-        'male_length'   : 0.5*INCH2MM,
-        'color'         : (0.5, 0.5, 0.5, 1.0),
-        }
-
 vibration_grommet = {
         'outer_diameter' : 0.625*INCH2MM, 
         'hole_diameter'  : 0.270*INCH2MM,
@@ -33,10 +24,10 @@ vibration_grommet = {
 hallway_bottom_plate = {
         'length'                  : 12.5*INCH2MM,  
         'thickness'               : 6.0, 
-        'width'                   : 1.0*INCH2MM, 
+        'width'                   : 0.9*INCH2MM, 
         'radius'                  : 0.25*INCH2MM,
         'mount_hole_diam'         : 0.2570*INCH2MM, 
-        'mount_hole_spacing'      : 11.0*INCH2MM, 
+        'mount_hole_space'        : 11.0*INCH2MM, 
         'motor_cutout_width'      : 0.28*INCH2MM,
         'motor_cutout_length'     : 1.0*INCH2MM, 
         'motor_cutout_gap'        : 0.4*INCH2MM,
@@ -45,11 +36,10 @@ hallway_bottom_plate = {
         'color'                   : (0.5, 0.5, 1.0, 1.0), 
         }
 
-
 hallway_top_plate = copy.copy(hallway_bottom_plate)
 hallway_top_plate['thickness'] = (1/16.0)*INCH2MM
 hallway_top_plate['cutout_width'] = arena_tube['width'] + 0.002*INCH2MM 
-hallway_top_plate['cutout_length'] = arena_tube['length'] + 0.002*INCH2MM 
+hallway_top_plate['cutout_length'] = arena_tube['length'] + 0.1*INCH2MM #0.002*INCH2MM 
 hallway_top_plate['color'] = (1.00, 0.9, 0.8, 1.0)
 
 pager_motor = {
@@ -80,10 +70,19 @@ backlight = {
 
 diffuser = {
         'length'           : backlight['length'],
-        'width'            : backlight['width']+0.25*INCH2MM,
+        'width'            : backlight['width']+0.50*INCH2MM,
         'thickness'        : (1.0/16)*INCH2MM,
         'mount_hole_diam'  : backlight['mount_hole_diam'],
         'mount_hole_space' : backlight['mount_hole_space'],
+        }
+
+hallway_standoff =  {
+        'diameter'      : 0.5*INCH2MM, 
+        'length'        : 2.0*INCH2MM,
+        'hole_diameter' : 0.2*INCH2MM,  # 1/4-20
+        'type'          : 'male-female',
+        'male_length'   : 0.5*INCH2MM,
+        'color'         : (0.5, 0.5, 0.5, 1.0),
         }
 
 backlight_standoff = {
@@ -102,3 +101,29 @@ diffuser_standoff = {
         'male_length'   : 0.5*INCH2MM,
         }
 
+panels_pcb = {
+        'length'                : 12.5*INCH2MM,
+        'width'                 : 1.0*INCH2MM,
+        'thickness'             : 0.064*INCH2MM,
+        'color'                 : (0.0, 1.0, 0.0, 1.0),
+        'mount_hole_diameter'   : 0.26*INCH2MM, # 1/4 through hole
+        'mount_hole_offset'     : 0.0*INCH2MM, 
+        'mount_hole_space'      : hallway_bottom_plate['mount_hole_space'],
+        'num_panels'            : 7,
+        'panel_space_tol'       : 0.005*INCH2MM,
+        'panel_header_overlap'  : 0.11*INCH2MM,
+        'panel_header_offset'   : 0.129*INCH2MM,
+        }
+
+header = {
+        'length'   : 0.822*INCH2MM, 
+        'height'   : 0.333*INCH2MM, 
+        'width'    : 0.0975*INCH2MM, 
+        'color'    : (0,0,0,1.0),
+        }
+
+panel = {
+        'length'    : 1.26*INCH2MM, 
+        'height'   : 1.26*INCH2MM,
+        'width'    : 0.458*INCH2MM,
+        }

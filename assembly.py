@@ -22,5 +22,15 @@ class Assembly(object):
 
     def translate(self,v=(0,0,0)):
         for name,part in self.parts.iteritems():
-            self.parts[name] = Translate(part,v=v)
+            if isinstance(part,Assembly):
+                self.parts[name].translate(v=v)
+            else:
+                self.parts[name] = Translate(part,v=v)
+
+    def rotate(self,a=0,v=(1,0,0)):
+        for name,part in self.parts.iteritems():
+            if isinstance(part,Assembly):
+                self.parts[name].rotate(a=a,v=v)
+            else:
+                self.parts[name] = Rotate(part,a=a,v=v)
 

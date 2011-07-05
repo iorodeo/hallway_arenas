@@ -12,7 +12,7 @@ class Hallway_Bottom_Plate(Part):
         width = self.params['width']
         radius = self.params['radius']
         hole_diam = self.params['mount_hole_diam']
-        hole_spacing = self.params['mount_hole_spacing']
+        hole_spacing = self.params['mount_hole_space']
         motor_cutout_width = self.params['motor_cutout_width']
         motor_cutout_length = self.params['motor_cutout_length']
         motor_cutout_gap = self.params['motor_cutout_gap']

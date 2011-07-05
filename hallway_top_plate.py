@@ -13,7 +13,7 @@ class Hallway_Top_Plate(Part):
         width = self.params['width']
         radius = self.params['radius']
         hole_diam = self.params['mount_hole_diam']
-        hole_spacing = self.params['mount_hole_spacing']
+        hole_spacing = self.params['mount_hole_space']
         cutout_width = self.params['cutout_width']
         cutout_length = self.params['cutout_length']
 
