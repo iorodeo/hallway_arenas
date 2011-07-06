@@ -2,6 +2,7 @@
 Base class for assemblies
 """
 import os
+import pickle
 from py2scad import *
 
 class Assembly(object):
@@ -26,16 +27,16 @@ class Assembly(object):
             if isinstance(part,Assembly):
                 self.parts[name].translate(v=v)
             else:
-                self.parts[name] = Translate(part,v=v)
+                self.parts[name].translate(v=v)
 
     def rotate(self,a=0,v=(1,0,0)):
         for name,part in self.parts.iteritems():
             if isinstance(part,Assembly):
                 self.parts[name].rotate(a=a,v=v)
             else:
-                self.parts[name] = Rotate(part,a=a,v=v)
+                self.parts[name].rotate(a=a,v=v)
 
-    def write_stl(self,parent_name=''):
+    def convert2stl(self,parent_name=''):
         for name, part in self.parts.iteritems():
 
             if parent_name:
@@ -44,7 +45,7 @@ class Assembly(object):
                 combined_name = name
 
             if isinstance(part,Assembly):
-                part.write_stl(parent_name=combined_name)
+                part.convert2stl(parent_name=combined_name)
             else:
                 scad_filename = 'temp.scad'
                 stl_filename = '%s.stl'%(combined_name,)
@@ -61,4 +62,31 @@ class Assembly(object):
 
                 # Remove scad file
                 os.unlink(scad_filename)
+
+
+    def get_vconfig_obj_list(self,parent_name=''):
+        obj_list = []
+        for name, part in self.parts.iteritems(): 
+            if parent_name:
+                combined_name = '%s_%s'%(parent_name,name)
+            else:
+                combined_name = name
+            if isinstance(part,Assembly):
+                obj_list.extend(part.get_vconfig_obj_list(combined_name))
+            else:
+                obj_list.append(part.get_vconfig_obj(combined_name))
+        return obj_list
+
+    def write_vconfig(self, name):
+        obj_list = self.get_vconfig_obj_list()
+        config = {
+                'background' : (0.8,0.8,0.8),
+                'size'       : (600,600),
+                'objects'    : obj_list,
+                }
+        filename = '%s_vconfig.pkl'%(name,)
+        with open(filename,'w') as fid:
+            pickle.dump(config,fid)
+
+
 

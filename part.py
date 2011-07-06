@@ -27,4 +27,16 @@ class Part(object):
     def color(self,rgba=(0,0,0,0)):
         self.part = Color(self.part,rgba=rgba)
 
-
+    def get_vconfig_obj(self,name):
+        
+        color = self.params['color'][0:3]
+        opacity = self.params['color'][3]
+        parameters = {
+                'specular_power' : 0.8,
+                'specular'       : 0.7,
+                'diffuse'        : 0.7, 
+                'color'          : color,
+                'opacity'        : opacity, 
+                } 
+        obj = {'filename' : '%s.stl'%(name,), 'parameters' : parameters}
+        return obj
