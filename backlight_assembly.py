@@ -29,6 +29,7 @@ class Backlight_Assembly(Assembly):
         # Shift backlight into position
         z_shift = self.params.backlight_standoff['length'] + 0.5*self.params.backlight['thickness']
         backlight.translate(v=(0,0,z_shift))
+        backlight.color(self.params.backlight['color'])
 
         # Shift diffuser standoffs into position
         z_shift = 0.5*self.params.diffuser_standoff['length']
