@@ -8,10 +8,15 @@ from vibration_grommet import Vibration_Grommet
 
 class Standoff_Grommet_Assembly(Assembly):
 
+    def __init__(self,**kwargs):
+        self.standoff_name = kwargs['standoff_name']
+        super(Standoff_Grommet_Assembly,self).__init__(params=kwargs['params'])
+
     def make(self):
 
         # Create components
-        standoff = Standoff_Round(**self.params.hallway_standoff)
+        standoff_params = getattr(self.params,self.standoff_name)
+        standoff = Standoff_Round(**standoff_params)
         grommet = Vibration_Grommet(**self.params.vibration_grommet)
 
         # Shift grommet into position
@@ -20,22 +25,22 @@ class Standoff_Grommet_Assembly(Assembly):
         grommet.color(rgba=self.params.vibration_grommet['color'])
 
         # Shift standoff into position
-        standoff_z_shift = 0.5*self.params.hallway_standoff['length'] + 2*grommet_z_shift
+        standoff_z_shift = 0.5*standoff_params['length'] + 2*grommet_z_shift
         standoff.translate(v=(0,0,standoff_z_shift))
-        standoff.color(rgba=self.params.hallway_standoff['color'])
+        standoff.color(rgba=standoff_params['color'])
         self.parts = {
                 'standoff' : standoff,
                 'grommet'  : grommet,
                 }
         # Values for later use in larger assemblies
         self.z_min = 0.0
-        self.z_max = self.params.vibration_grommet['height'] + self.params.hallway_standoff['length']
+        self.z_max = self.params.vibration_grommet['height'] + standoff_params['length']
 
 # -----------------------------------------------------------------------------
 if __name__ == '__main__':
 
     import params
-    assem = Standoff_Grommet_Assembly(params=params)
+    assem = Standoff_Grommet_Assembly(params=params,standoff_name='hallway_standoff')
     prog = SCAD_Prog()
     prog.fn = 50
     prog.add(assem)

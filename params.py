@@ -1,8 +1,29 @@
 """ Parameters for hallway arena CAD model
-
 """
 import copy
+
 INCH2MM = 25.4
+
+# -----------------------------------------------------------------------------
+# Utilty funcitons - for dependent parameters
+
+def get_panels_pcb_offset():
+    """
+    Computes the mount hole offset for the panels pcb based on 
+    """
+    mount_hole_offset = system_assembly['panels_to_hallway_gap']
+    mount_hole_offset -= system_assembly['panels_assembly_offset']
+    mount_hole_offset += 0.5*hallway_bottom_plate['width']
+    mount_hole_offset += 0.5*panels_pcb['width']
+    return mount_hole_offset
+
+# -----------------------------------------------------------------------------
+# Hallway arena parameters
+
+system_assembly = {
+        'panels_to_hallway_gap'       : 1.0, 
+        'panels_assembly_offset'      : 1.0*INCH2MM,
+        }
 
 arena_tube = {
         'length'    : 200.0,
@@ -63,7 +84,7 @@ pager_motor_plate = {
 
 backlight = {
         'length'             : 9.5*INCH2MM,
-        'width'              : 1.0*INCH2MM,
+        'width'              : 2.0*INCH2MM,
         'thickness'          : 0.064*INCH2MM,
         'mount_hole_diam'    : 0.257*INCH2MM,
         'mount_hole_space'   : 9.0*INCH2MM, 
@@ -72,7 +93,7 @@ backlight = {
 
 diffuser = {
         'length'           : backlight['length'],
-        'width'            : backlight['width']+0.50*INCH2MM,
+        'width'            : backlight['width'],
         'thickness'        : (1.0/16)*INCH2MM,
         'mount_hole_diam'  : backlight['mount_hole_diam'],
         'mount_hole_space' : backlight['mount_hole_space'],
@@ -88,9 +109,18 @@ hallway_standoff =  {
         'color'         : (0.5, 0.5, 0.5, 1.0),
         }
 
+panels_standoff =  {
+        'diameter'      : 0.5*INCH2MM, 
+        'length'        : 2.0*INCH2MM,
+        'hole_diameter' : 0.2*INCH2MM,  # 1/4-20
+        'type'          : 'male-female',
+        'male_length'   : 0.5*INCH2MM,
+        'color'         : (0.5, 0.5, 0.5, 1.0),
+        }
+
 backlight_standoff = {
         'diameter'      : 0.5*INCH2MM,
-        'length'        : 1.0*INCH2MM,
+        'length'        : 0.75*INCH2MM,
         'hole_diameter' : 0.2*INCH2MM,  # 1/4-20
         'type'          : 'male-female',
         'male_length'   : 0.5*INCH2MM, 
@@ -108,10 +138,9 @@ diffuser_standoff = {
 
 panels_pcb = {
         'length'                : 12.5*INCH2MM,
-        'width'                 : 1.0*INCH2MM,
+        'width'                 : 1.25*INCH2MM,
         'thickness'             : 0.064*INCH2MM,
         'mount_hole_diameter'   : 0.26*INCH2MM, # 1/4 through hole
-        'mount_hole_offset'     : 0.0*INCH2MM, 
         'mount_hole_space'      : hallway_bottom_plate['mount_hole_space'],
         'num_panels'            : 7,
         'panel_space_tol'       : 0.005*INCH2MM,
@@ -119,6 +148,7 @@ panels_pcb = {
         'panel_header_offset'   : 0.129*INCH2MM,
         'color'                 : (0.0, 1.0, 0.0, 1.0),
         }
+panels_pcb['mount_hole_offset'] = get_panels_pcb_offset()
 
 header = {
         'length'   : 0.822*INCH2MM, 
@@ -133,3 +163,15 @@ panel = {
         'width'    : 0.458*INCH2MM,
         'color'    : (0.0, 0.0, 1.0, 1.0),
         }
+
+breadboard = {
+        'length'           : 12.0*INCH2MM,
+        'width'            : 12.0*INCH2MM,
+        'thickness'        : 0.5*INCH2MM, 
+        'hole_spacing'     : 1.0*INCH2MM,
+        'hole_diameter'    : 0.25*INCH2MM,
+        'hole_offset'      : 0.5*INCH2MM,
+        'color'            : (0.2, 0.2, 0.2, 1.0),
+        }
+
+

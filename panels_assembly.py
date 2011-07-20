@@ -11,8 +11,8 @@ class Panels_Assembly(Assembly):
     def make(self):
         # Create components
         panels_pcb_assembly = Panels_PCB_Assembly(params = self.params)
-        standoff_assembly_pos = Standoff_Grommet_Assembly(params=self.params)
-        standoff_assembly_neg = Standoff_Grommet_Assembly(params=self.params)
+        standoff_assembly_pos = Standoff_Grommet_Assembly(params=self.params,standoff_name='panels_standoff')
+        standoff_assembly_neg = Standoff_Grommet_Assembly(params=self.params,standoff_name='panels_standoff')
 
         # Translate plate assemby into possition
         plate_z_shift = standoff_assembly_pos.z_max

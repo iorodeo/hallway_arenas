@@ -14,8 +14,8 @@ class Hallway_Assembly(Assembly):
     def make(self):
         # Get componets
         plate_assembly = Hallway_Plate_Assembly(params=self.params)
-        standoff_assembly_pos = Standoff_Grommet_Assembly(params=self.params)
-        standoff_assembly_neg = Standoff_Grommet_Assembly(params=self.params)
+        standoff_assembly_pos = Standoff_Grommet_Assembly(params=self.params,standoff_name='hallway_standoff')
+        standoff_assembly_neg = Standoff_Grommet_Assembly(params=self.params,standoff_name='hallway_standoff')
         pager_motor_pos = Pager_Motor(**self.params.pager_motor)
         pager_motor_neg = Pager_Motor(**self.params.pager_motor)
         pager_plate_pos = Pager_Motor_Plate(**self.params.pager_motor_plate)

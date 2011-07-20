@@ -15,11 +15,14 @@ class System_Assembly(Assembly):
         backlight_assembly = Backlight_Assembly(params=self.params)
         panels_assembly_pos = Panels_Assembly(params=self.params)
         panels_assembly_neg = Panels_Assembly(params=self.params)
+        panels_assembly_offset = self.params.system_assembly['panels_assembly_offset']
 
         # Translate positve and negative panel assemblies into position
         panels_assembly_pos.rotate(a=180,v=(0,0,1))
-        panels_assembly_pos.translate(v=(0,1.0*INCH2MM,0))
-        panels_assembly_neg.translate(v=(0,-1.0*INCH2MM,0))
+        #panels_assembly_pos.translate(v=(0,1.0*INCH2MM,0))
+        #panels_assembly_neg.translate(v=(0,-1.0*INCH2MM,0))
+        panels_assembly_pos.translate(v=(0,panels_assembly_offset,0))
+        panels_assembly_neg.translate(v=(0,-panels_assembly_offset,0))
 
         self.parts = {
                 'hallway_assembly'   : hallway_assembly,
