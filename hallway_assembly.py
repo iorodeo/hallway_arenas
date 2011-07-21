@@ -6,7 +6,7 @@ from assembly import Assembly
 from hallway_plate_assembly import Hallway_Plate_Assembly
 from standoff_grommet_assembly import Standoff_Grommet_Assembly
 from pager_motor import Pager_Motor
-from pager_motor_plate import Pager_Motor_Plate
+from pager_motor_holder import Pager_Motor_Holder
 from arena_tube import Arena_Tube
 
 class Hallway_Assembly(Assembly):
@@ -18,8 +18,8 @@ class Hallway_Assembly(Assembly):
         standoff_assembly_neg = Standoff_Grommet_Assembly(params=self.params,standoff_name='hallway_standoff')
         pager_motor_pos = Pager_Motor(**self.params.pager_motor)
         pager_motor_neg = Pager_Motor(**self.params.pager_motor)
-        pager_plate_pos = Pager_Motor_Plate(**self.params.pager_motor_plate)
-        pager_plate_neg = Pager_Motor_Plate(**self.params.pager_motor_plate)
+        pager_motor_holder_pos = Pager_Motor_Holder(**self.params.pager_motor_holder)
+        pager_motor_holder_neg = Pager_Motor_Holder(**self.params.pager_motor_holder)
         arena_tube = Arena_Tube(**self.params.arena_tube)
 
         # Translate plate assemby into possition
@@ -32,29 +32,31 @@ class Hallway_Assembly(Assembly):
         standoff_assembly_neg.translate(v=(-standoff_x_shift, 0, 0))
 
         # Rotate and translate pager motors into positon
-        pager_motor_pos.rotate(a=-90,v=(0,1,0))
-        pager_motor_neg.rotate(a=90,v=(0,1,0))
-        motor_x_shift = 0.5*self.params.hallway_bottom_plate['mount_hole_space'] 
-        motor_x_shift -= self.params.hallway_bottom_plate['motor_cutout_gap']
-        motor_x_shift -=  0.5*self.params.hallway_bottom_plate['motor_cutout_length']
-        motor_z_shift = self.params.hallway_standoff['length']
+        pager_motor_pos.rotate(a=90,v=(1,0,0))
+        pager_motor_neg.rotate(a=90,v=(1,0,0))
+
+        motor_x_shift = 0.5*self.params.hallway_bottom_plate['mount_hole_space']
+        motor_x_shift += self.params.hallway_bottom_plate['motor_mount_hole_gap']
+
+        motor_z_shift = self.params.hallway_standoff['length'] 
         motor_z_shift += self.params.vibration_grommet['height']
         motor_z_shift -= 0.5*self.params.pager_motor['body_diam']
-        motor_z_shift += self.params.hallway_bottom_plate['thickness']
+        motor_z_shift -= self.params.pager_motor_holder['thickness']
+        motor_z_shift += self.params.pager_motor_holder['cutout_depth']
+
         pager_motor_pos.translate(v=(motor_x_shift,0,motor_z_shift))
         pager_motor_neg.translate(v=(-motor_x_shift,0,motor_z_shift))
         pager_motor_pos.color(rgba=self.params.pager_motor['color'])
         pager_motor_neg.color(rgba=self.params.pager_motor['color'])
 
-        # Rotate and translate motor plates into position
-        pager_plate_pos.rotate(a=90,v=(0,0,1))
-        pager_plate_neg.rotate(a=-90,v=(0,0,1))
-        pager_z_shift = self.params.hallway_standoff['length']
-        pager_z_shift += self.params.vibration_grommet['height']
-        pager_z_shift -= 0.5*self.params.pager_motor_plate['thickness']
-        pager_z_shift -= self.params.pager_motor['body_diam'] - self.params.hallway_bottom_plate['thickness']
-        pager_plate_pos.translate(v=(motor_x_shift,0,pager_z_shift))
-        pager_plate_neg.translate(v=(-motor_x_shift,0,pager_z_shift))
+        # Translate pager motor holders into position
+        holder_z_shift = self.params.hallway_standoff['length'] 
+        holder_z_shift += self.params.vibration_grommet['height']
+        pager_motor_holder_pos.translate(v=(motor_x_shift,0,holder_z_shift))
+        pager_motor_holder_neg.translate(v=(-motor_x_shift,0,holder_z_shift))
+        
+        pager_motor_holder_pos.color(rgba=self.params.pager_motor_holder['color'])
+        pager_motor_holder_neg.color(rgba=self.params.pager_motor_holder['color'])
 
         # Translate arena tube into position
         arena_z_shift = 0.5*self.params.arena_tube['height']
@@ -66,14 +68,14 @@ class Hallway_Assembly(Assembly):
 
         # Create new parts dictionary
         self.parts = {
-                'plate_assembly'        : plate_assembly,
-                'standoff_assembly_pos' : standoff_assembly_pos, 
-                'standoff_assembly_neg' : standoff_assembly_neg,
-                'pager_motor_pos'       : pager_motor_pos,
-                'pager_motor_neg'       : pager_motor_neg,
-                'pager_plate_pos'       : pager_plate_pos,
-                'pager_plate_neg'       : pager_plate_neg,
-                'arena_tube'            : arena_tube,
+                'plate_assembly'          : plate_assembly,
+                'standoff_assembly_pos'   : standoff_assembly_pos, 
+                'standoff_assembly_neg'   : standoff_assembly_neg,
+                'pager_motor_pos'         : pager_motor_pos,
+                'pager_motor_neg'         : pager_motor_neg,
+                'pager_motor_holder_pos'  : pager_motor_holder_pos,
+                'pager_motor_holder_neg'  : pager_motor_holder_neg,
+                'arena_tube'              : arena_tube,
                 }
 
 # -----------------------------------------------------------------------------

@@ -16,6 +16,7 @@ class Pager_Motor_Holder(Part):
         tie_slot_height = self.params['tie_slot_height']
         tie_slot_width = self.params['tie_slot_width']
         tie_slot_offset = self.params['tie_slot_offset']
+        color = self.params['color']
 
         # Create part
         part = Cube(size=(length,width,thickness))
@@ -55,9 +56,10 @@ class Pager_Motor_Holder(Part):
         cut_cube_neg = Translate(cut_cube,v=(-x_shift,0,z_shift))
         part = Difference([part,cut_cube_pos,cut_cube_neg])
 
-        # Orient part
+        # Orient part and add color
         part = Rotate(part,a=180,v=(1,0,0))
         part = Translate(part,v=(0,0,-0.5*thickness))
+        #part = Color(part,rgba=self.params['color'])
 
         self.part = part
 

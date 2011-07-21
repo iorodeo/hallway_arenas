@@ -53,6 +53,7 @@ class Panels_PCB_Assembly(Assembly):
             # Create panel
             panel_temp = Panel(**self.params.panel)
             panel_temp.translate(v=(x_pos,y_pos_panels,z_pos_panels))
+            panel_temp.color(rgba=self.params.panel['color'])
             panel_list.append(panel_temp)
 
         # Create parts dictionary

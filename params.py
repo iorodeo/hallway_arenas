@@ -47,18 +47,14 @@ vibration_grommet = {
         }
 
 hallway_bottom_plate = {
-        #'length'                  : 12.5*INCH2MM,  
         'length'                  : 13.5*INCH2MM,  
         'thickness'               : 6.0, 
         'width'                   : 0.9*INCH2MM, 
         'radius'                  : 0.25*INCH2MM,
         'mount_hole_diam'         : 0.2570*INCH2MM, 
         'mount_hole_space'        : 11.0*INCH2MM, 
-        'motor_cutout_width'      : 0.28*INCH2MM,
-        'motor_cutout_length'     : 1.0*INCH2MM, 
-        'motor_cutout_gap'        : 0.4*INCH2MM,
-        'motor_mount_hole_diam'   : 0.088*INCH2MM, # 4-40
-        'motor_mount_hole_space'  : 0.65*INCH2MM, 
+        'motor_mount_hole_diam'   : 0.088*INCH2MM, # 4-40 tap hole
+        'motor_mount_hole_gap'    : 0.75*INCH2MM,
         'color'                   : (0.2, 0.2, 1.0, 0.35), 
         }
 
@@ -90,16 +86,8 @@ pager_motor_holder = {
         'tie_slot_height'       : 1.3,
         'tie_slot_width'        : 2.93,
         'tie_slot_offset'       : 1.54,
+        'color'                 : (0.4, 0.8, 0.8, 1.0),
 }
-
-pager_motor_plate = {
-        'length'     : hallway_bottom_plate['width'],
-        'width'      : 0.35*INCH2MM,
-        'thickness'  : (1.0/16.0)*INCH2MM,
-        'hole_diam'  : 0.12*INCH2MM,
-        'hole_space' : hallway_bottom_plate['motor_mount_hole_space'],
-        'color'      : (0.6, 0.7, 0.8, 1.0),
-        }
 
 backlight = {
         'length'             : 9.5*INCH2MM,
@@ -156,7 +144,6 @@ diffuser_standoff = {
         }
 
 panels_pcb = {
-        #'length'                : 12.5*INCH2MM,
         'length'                : 13.5*INCH2MM,
         'width'                 : 1.25*INCH2MM,
         'thickness'             : 0.064*INCH2MM,
