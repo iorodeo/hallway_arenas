@@ -11,8 +11,8 @@ def get_panels_pcb_offset():
     """
     Computes the mount hole offset for the panels pcb based on 
     """
-    mount_hole_offset = system_assembly['panels_to_hallway_gap']
-    mount_hole_offset -= system_assembly['panels_assembly_offset']
+    mount_hole_offset = arena_assembly['panels_to_hallway_gap']
+    mount_hole_offset -= arena_assembly['panels_assembly_offset']
     mount_hole_offset += 0.5*hallway_bottom_plate['width']
     mount_hole_offset += 0.5*panels_pcb['width']
     return mount_hole_offset
@@ -20,7 +20,11 @@ def get_panels_pcb_offset():
 # -----------------------------------------------------------------------------
 # Hallway arena parameters
 
-system_assembly = {
+two_arena_assembly = {
+        'arena_offset' : 2.5*INCH2MM, 
+        }
+
+arena_assembly = {
         'panels_to_hallway_gap'       : 1.0, 
         'panels_assembly_offset'      : 1.0*INCH2MM,
         }
@@ -43,7 +47,8 @@ vibration_grommet = {
         }
 
 hallway_bottom_plate = {
-        'length'                  : 12.5*INCH2MM,  
+        #'length'                  : 12.5*INCH2MM,  
+        'length'                  : 13.5*INCH2MM,  
         'thickness'               : 6.0, 
         'width'                   : 0.9*INCH2MM, 
         'radius'                  : 0.25*INCH2MM,
@@ -72,6 +77,20 @@ pager_motor = {
         'shaft_diam'    : 0.08*INCH2MM,
         'color'         : (0.8,0.8,0,1.0)
         }
+
+pager_motor_holder = {
+        'length'                : 13.78, 
+        'width'                 : 8.64, 
+        'thickness'             : 6.12,
+        'cutout_length'         : 8.56,
+        'cutout_depth'          : 3.0,
+        'mount_hole_diam'       : 0.1285*INCH2MM, # 4-40
+        'counter_bore_diam'     : 0.25*INCH2MM,
+        'counter_bore_depth'    : 2.0,
+        'tie_slot_height'       : 1.3,
+        'tie_slot_width'        : 2.93,
+        'tie_slot_offset'       : 1.54,
+}
 
 pager_motor_plate = {
         'length'     : hallway_bottom_plate['width'],
@@ -137,7 +156,8 @@ diffuser_standoff = {
         }
 
 panels_pcb = {
-        'length'                : 12.5*INCH2MM,
+        #'length'                : 12.5*INCH2MM,
+        'length'                : 13.5*INCH2MM,
         'width'                 : 1.25*INCH2MM,
         'thickness'             : 0.064*INCH2MM,
         'mount_hole_diameter'   : 0.26*INCH2MM, # 1/4 through hole
@@ -173,5 +193,8 @@ breadboard = {
         'hole_offset'      : 0.5*INCH2MM,
         'color'            : (0.2, 0.2, 0.2, 1.0),
         }
+
+
+        
 
 

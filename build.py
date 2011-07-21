@@ -24,11 +24,29 @@ if cmd == 'scad':
             print 'running: %s'%(systemCmd,)
             os.system(systemCmd) 
 
-elif cmd == 'stl-system':
+elif cmd == 'stl_arena':
     """
-    Build the system stl files and visual configuration.
+    Build the stl files and visual configuration for the arena assembly
     """
-    os.system('python stl_part_system_assembly.py stl vconfig')
+    os.system('python stl_arena_assembly.py stl vconfig')
+
+elif cmd == 'vconfig_arena':
+    """
+    Create visual configuration file for arena assembly
+    """
+    os.system('python stl_arena_assembly.py vconfig')
+
+elif cmd == 'stl_two_arena':
+    """
+    Build the stl files and visual configuration for the two arena assembly
+    """
+    os.system('python stl_two_arena_assembly.py stl vconfig')
+
+elif cmd == 'vconfig_two_arena':
+    """
+    Build the visual configuration for the two arena assembly
+    """
+    os.system('python stl_two_arena_assembly.py vconfig')
 
 elif cmd == 'clean':
     """
