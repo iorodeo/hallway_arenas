@@ -21,7 +21,10 @@ def get_panels_pcb_offset():
 # Hallway arena parameters
 
 two_arena_assembly = {
-        'arena_offset' : 2.5*INCH2MM, 
+        'arena_y_offset'       : 2.5*INCH2MM, 
+        'camera_post_y_offset' : 5.5*INCH2MM,
+        'camera_post_x_offset' : -1.5*INCH2MM,
+        'camera_plate_z_frac'  : 0.95, 
         }
 
 arena_assembly = {
@@ -55,14 +58,14 @@ hallway_bottom_plate = {
         'mount_hole_space'        : 11.0*INCH2MM, 
         'motor_mount_hole_diam'   : 0.088*INCH2MM, # 4-40 tap hole
         'motor_mount_hole_gap'    : 0.75*INCH2MM,
-        'color'                   : (0.2, 0.2, 1.0, 0.35), 
+        'color'                   : (0.2, 0.2, 1.0, 0.25), 
         }
 
 hallway_top_plate = copy.copy(hallway_bottom_plate)
 hallway_top_plate['thickness'] = (1/16.0)*INCH2MM
 hallway_top_plate['cutout_width'] = arena_tube['width'] + 0.002*INCH2MM 
 hallway_top_plate['cutout_length'] = arena_tube['length'] + 0.1*INCH2MM #0.002*INCH2MM 
-hallway_top_plate['color'] = (1.0, 0.2, 0.2, 0.35)
+hallway_top_plate['color'] = (1.0, 0.2, 0.2, 0.25)
 
 pager_motor = {
         'body_diam'     : 0.2775*INCH2MM, 
@@ -181,7 +184,36 @@ breadboard = {
         'color'            : (0.2, 0.2, 0.2, 1.0),
         }
 
-
+camera_post = {
+        'dxf_profile'  : '1010.dxf',
+        'length'       : 24.0*INCH2MM,
+        'width'        : 1.0*INCH2MM,
+        'color'        : (0.5, 0.5, 0.5, 1.0),
+        } 
         
+camera_plate = {
+        'length'                  : 12.0*INCH2MM,   
+        'width'                   : 59.0,
+        'thickness'               : 6.0, 
+        'mount_hole_diam'         : 0.26*INCH2MM,
+        'mount_hole_x_space'      : 11.0*INCH2MM,
+        'mount_hole_y_space'      : 1.5*INCH2MM,
+        'camera_mount_hole_diam'  : 3.2, 
+        'camera_mount_x_space'    : 26.0,
+        'camera_mount_y_space'    : 50.0,
+        'color'                   : (0.2,0.2,0.2,0.25),
+        }
 
+camera = {
+        'body_length'        : 59.0,
+        'body_width'         : 44.0, 
+        'body_thickness'     : 29.0,
+        'body_radius'        : 3.0,
+        'lens_shaft_diam'    : 27.0, 
+        'lens_shaft_length'  : 8.0,
+        'lens_diam'          : 33.6, 
+        'lens_length'        : 38.0, 
+        'color'              : (0.2, 0.2, 0.2, 1.0),
+        }
+        
 
