@@ -21,9 +21,11 @@ class Hallway_Assembly(Assembly):
         pager_motor_holder_pos = Pager_Motor_Holder(**self.params.pager_motor_holder)
         pager_motor_holder_neg = Pager_Motor_Holder(**self.params.pager_motor_holder)
         arena_tube = Arena_Tube(**self.params.arena_tube)
+        explode_z = self.params.explode_z
 
         # Translate plate assemby into possition
         plate_z_shift = standoff_assembly_pos.z_max
+        plate_z_shift += 2*explode_z
         plate_assembly.translate(v=(0,0,plate_z_shift))
 
         # Translate standoffs into position
@@ -52,6 +54,7 @@ class Hallway_Assembly(Assembly):
         # Translate pager motor holders into position
         holder_z_shift = self.params.hallway_standoff['length'] 
         holder_z_shift += self.params.vibration_grommet['height']
+        holder_z_shift += explode_z
         pager_motor_holder_pos.translate(v=(motor_x_shift,0,holder_z_shift))
         pager_motor_holder_neg.translate(v=(-motor_x_shift,0,holder_z_shift))
         
@@ -63,6 +66,7 @@ class Hallway_Assembly(Assembly):
         arena_z_shift += self.params.vibration_grommet['height']
         arena_z_shift += self.params.hallway_standoff['length']
         arena_z_shift += self.params.hallway_bottom_plate['thickness']
+        arena_z_shift += 4*explode_z
         arena_tube.translate(v=(0,0,arena_z_shift))
         arena_tube.color(rgba=self.params.arena_tube['color'])
 

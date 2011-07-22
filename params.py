@@ -20,6 +20,9 @@ def get_panels_pcb_offset():
 # -----------------------------------------------------------------------------
 # Hallway arena parameters
 
+explode_z = 0 
+explode_y = 0 
+
 two_arena_assembly = {
         'arena_y_offset'       : 2.5*INCH2MM, 
         'camera_post_y_offset' : 5.5*INCH2MM,
@@ -30,6 +33,7 @@ two_arena_assembly = {
 arena_assembly = {
         'panels_to_hallway_gap'       : 1.0, 
         'panels_assembly_offset'      : 1.0*INCH2MM,
+        'explode'                     : 0,
         }
 
 arena_tube = {
@@ -58,14 +62,14 @@ hallway_bottom_plate = {
         'mount_hole_space'        : 11.0*INCH2MM, 
         'motor_mount_hole_diam'   : 0.088*INCH2MM, # 4-40 tap hole
         'motor_mount_hole_gap'    : 0.75*INCH2MM,
-        'color'                   : (0.2, 0.2, 1.0, 0.25), 
+        'color'                   : (0.2, 0.2, 1.0, 1.0), 
         }
 
 hallway_top_plate = copy.copy(hallway_bottom_plate)
 hallway_top_plate['thickness'] = (1/16.0)*INCH2MM
 hallway_top_plate['cutout_width'] = arena_tube['width'] + 0.002*INCH2MM 
 hallway_top_plate['cutout_length'] = arena_tube['length'] + 0.1*INCH2MM #0.002*INCH2MM 
-hallway_top_plate['color'] = (1.0, 0.2, 0.2, 0.25)
+hallway_top_plate['color'] = (1.0, 0.0, 1.0, 1.0)
 
 pager_motor = {
         'body_diam'     : 0.2775*INCH2MM, 
@@ -216,4 +220,12 @@ camera = {
         'color'              : (0.2, 0.2, 0.2, 1.0),
         }
         
+bracket = {
+        'length'       : 2.0*INCH2MM,
+        'width'        : 0.88*INCH2MM,
+        'thickness'    : 0.1855*INCH2MM,
+        'hole_spacing' : 1.0*INCH2MM, 
+        'hole_diam'    : 0.2825*INCH2MM,
+        'color'        : (0.9, 0.5, 0.5, 1.0),
+        }
 

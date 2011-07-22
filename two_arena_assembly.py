@@ -5,6 +5,7 @@ from breadboard import Breadboard
 from camera_post import Camera_Post
 from camera_plate import Camera_Plate
 from camera import Camera
+from bracket import Bracket
 
 class Two_Arena_Assembly(Assembly):
 
@@ -26,6 +27,10 @@ class Two_Arena_Assembly(Assembly):
         camera_post_neg = Camera_Post(**self.params.camera_post)
         camera_plate = Camera_Plate(**self.params.camera_plate)
         camera = Camera(**self.params.camera)
+        bracket_dict = {}
+        for i in (-1,1):
+            for j in (-1,1):
+                bracket_dict[(i,j)] = Bracket(**self.params.bracket)
 
         # Translate breadboard into position
         breadboard.translate(v=(0,0,-0.5*breadboard_thickness))
@@ -66,6 +71,22 @@ class Two_Arena_Assembly(Assembly):
         camera.translate(v=(x_shift,0,z_shift))
         camera.color(rgba=self.params.camera['color'])
 
+        # Rotate and translate brackets into positon
+        for k, bracket in bracket_dict.iteritems():
+            i,j = k
+            if i == 1:
+                bracket.rotate(a=180,v=(0,0,1))
+                x_shift = 0.5*self.params.bracket['length']
+                x_shift += camera_post_x_offset
+                x_shift += 0.5*self.params.camera_post['width']
+            else:
+                x_shift = -0.5*self.params.bracket['length'] 
+                x_shift += camera_post_x_offset
+                x_shift -= 0.5*self.params.camera_post['width']
+            y_shift = j*camera_post_y_offset
+            bracket.translate(v=(x_shift,y_shift,0))
+            bracket.color(rgba=self.params.bracket['color'])
+
         # Create parts dictionary
         self.parts = {
                 'breadboard'      : breadboard,
@@ -76,6 +97,19 @@ class Two_Arena_Assembly(Assembly):
                 'camera_plate'    : camera_plate,
                 'camera'          : camera,
                 }
+
+        for k, bracket in bracket_dict.iteritems():
+            i,j = k
+            name  = 'bracket'
+            if i == 1:
+                name = '%s_posx'%(name,)
+            else:
+                name = '%s_negx'%(name,)
+            if j == 1:
+                name = '%s_posy'%(name,)
+            else:
+                name = '%s_negy'%(name,)
+            self.parts[name] = bracket
 
 
 

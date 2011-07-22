@@ -13,9 +13,11 @@ class Panels_Assembly(Assembly):
         panels_pcb_assembly = Panels_PCB_Assembly(params = self.params)
         standoff_assembly_pos = Standoff_Grommet_Assembly(params=self.params,standoff_name='panels_standoff')
         standoff_assembly_neg = Standoff_Grommet_Assembly(params=self.params,standoff_name='panels_standoff')
+        explode_z = self.params.explode_z
 
         # Translate plate assemby into possition
         plate_z_shift = standoff_assembly_pos.z_max
+        plate_z_shift += 2*explode_z
         panels_pcb_assembly.translate(v=(0,0,plate_z_shift))
 
         # Translate standoffs into position

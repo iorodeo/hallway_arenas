@@ -1,6 +1,7 @@
 """
 Base class for makeing parts
 """
+import os
 from py2scad import *
 
 class Part(object):
@@ -40,3 +41,20 @@ class Part(object):
                 } 
         obj = {'filename' : '%s.stl'%(name,), 'parameters' : parameters}
         return obj
+
+    def convert2stl(self,name):
+        scad_filename = 'temp.scad'
+        stl_filename = '%s.stl'%(name,)
+
+        # Create temporary scad file
+        prog = SCAD_Prog()
+        prog.fn = 50
+        prog.add(self)
+        prog.write(scad_filename)
+
+        # Create stl file
+        print 'writing %s'%(stl_filename,)
+        os.system('openscad -s %s %s'%(stl_filename, scad_filename))
+
+        # Remove scad file
+        os.unlink(scad_filename)

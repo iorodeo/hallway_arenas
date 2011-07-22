@@ -16,11 +16,17 @@ class Arena_Assembly(Assembly):
         panels_assembly_pos = Panels_Assembly(params=self.params)
         panels_assembly_neg = Panels_Assembly(params=self.params)
         panels_assembly_offset = self.params.arena_assembly['panels_assembly_offset']
+        explode_y = self.params.explode_y
+        explode_z = self.params.explode_z
 
         # Translate positve and negative panel assemblies into position
         panels_assembly_pos.rotate(a=180,v=(0,0,1))
-        panels_assembly_pos.translate(v=(0,panels_assembly_offset,0))
-        panels_assembly_neg.translate(v=(0,-panels_assembly_offset,0))
+        y_shift = panels_assembly_offset + 2*explode_y
+        panels_assembly_pos.translate(v=(0, y_shift,0))
+        panels_assembly_neg.translate(v=(0,-y_shift,0))
+
+        # Translate hallware assembly 
+        hallway_assembly.translate(v=(0,0,explode_z))
 
         self.parts = {
                 'hallway_assembly'   : hallway_assembly,

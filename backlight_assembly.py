@@ -13,6 +13,7 @@ class Backlight_Assembly(Assembly):
     def make(self):
         backlight = Backlight(**self.params.backlight)
         diffuser = Diffuser(**self.params.diffuser)
+        explode_z = self.params.explode_z
         backlight_standoff = {} 
         diffuser_standoff = {} 
 
@@ -28,6 +29,7 @@ class Backlight_Assembly(Assembly):
 
         # Shift backlight into position
         z_shift = self.params.vibration_grommet['height'] + self.params.backlight_standoff['length'] + 0.5*self.params.backlight['thickness']
+        z_shift += 2*explode_z
         backlight.translate(v=(0,0,z_shift))
         backlight.color(self.params.backlight['color'])
 
@@ -35,6 +37,7 @@ class Backlight_Assembly(Assembly):
         z_shift = 0.5*self.params.diffuser_standoff['length']
         z_shift += self.params.vibration_grommet['height']
         z_shift += self.params.backlight_standoff['length']
+        z_shift += 3*explode_z
         z_shift += self.params.backlight['thickness']
         x_shift = 0.5*self.params.backlight['mount_hole_space']
         for k,obj in diffuser_standoff.iteritems():
@@ -48,6 +51,7 @@ class Backlight_Assembly(Assembly):
         z_shift += self.params.diffuser_standoff['length']
         z_shift += self.params.backlight_standoff['length']
         z_shift += self.params.backlight['thickness']
+        z_shift += 4*explode_z
         diffuser.translate(v=(0,0,z_shift))
 
         # Create parts dictionary

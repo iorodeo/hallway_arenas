@@ -18,6 +18,7 @@ class Standoff_Grommet_Assembly(Assembly):
         standoff_params = getattr(self.params,self.standoff_name)
         standoff = Standoff_Round(**standoff_params)
         grommet = Vibration_Grommet(**self.params.vibration_grommet)
+        explode_z = self.params.explode_z
 
         # Shift grommet into position
         grommet_z_shift = 0.5*self.params.vibration_grommet['height']
@@ -25,7 +26,7 @@ class Standoff_Grommet_Assembly(Assembly):
         grommet.color(rgba=self.params.vibration_grommet['color'])
 
         # Shift standoff into position
-        standoff_z_shift = 0.5*standoff_params['length'] + 2*grommet_z_shift
+        standoff_z_shift = 0.5*standoff_params['length'] + 2*grommet_z_shift + explode_z
         standoff.translate(v=(0,0,standoff_z_shift))
         standoff.color(rgba=standoff_params['color'])
         self.parts = {

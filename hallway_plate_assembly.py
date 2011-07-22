@@ -12,11 +12,12 @@ class Hallway_Plate_Assembly(Assembly):
         # Create components
         top_plate = Hallway_Top_Plate(**self.params.hallway_top_plate)
         bottom_plate = Hallway_Bottom_Plate(**self.params.hallway_bottom_plate)
+        explode_z = self.params.explode_z
 
         # Translate into position
-        bottom_z_shift = 0.5*self.params.hallway_bottom_plate['thickness']
+        bottom_z_shift = 0.5*self.params.hallway_bottom_plate['thickness'] 
         bottom_plate.translate(v=(0,0,bottom_z_shift))
-        top_z_shift = 2*bottom_z_shift + 0.5*self.params.hallway_top_plate['thickness']
+        top_z_shift = 2*bottom_z_shift + 0.5*self.params.hallway_top_plate['thickness'] + explode_z
         top_plate.translate(v=(0,0,top_z_shift))
 
         # Add color

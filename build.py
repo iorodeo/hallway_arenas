@@ -18,6 +18,8 @@ if cmd == 'scad':
     for fname in dirList:
         if fname == sys.argv[0]:
             continue
+        if fname[:3] == 'stl':
+            continue
         dummy, ext = os.path.splitext(fname)
         if ext == '.py':
             systemCmd = 'python %s'%(fname,)

@@ -22,6 +22,7 @@ class Panels_PCB_Assembly(Assembly):
         panel_header_overlap = self.params.panels_pcb['panel_header_overlap']
         panel_header_offset = self.params.panels_pcb['panel_header_offset']
         mount_hole_offset = self.params.panels_pcb['mount_hole_offset']
+        explode_z = self.params.explode_z
 
         panels_pos = scipy.arange(0.0,num_panels)*(panel_length + space_tol)
         panels_pos -= 0.5*(num_panels-1)*(panel_length + space_tol)
@@ -39,6 +40,7 @@ class Panels_PCB_Assembly(Assembly):
         z_pos_panels += panels_pcb_thickness 
         z_pos_panels += header_height 
         z_pos_panels -= panel_header_overlap
+        z_pos_panels += explode_z
 
         y_pos_header = panel_offset
         y_pos_panels = panel_header_offset + panel_offset
