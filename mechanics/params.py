@@ -97,7 +97,7 @@ pager_motor_holder = {
 }
 
 backlight = {
-        'length'             : 9.5*INCH2MM,
+        'length'             : 9.75*INCH2MM,
         'width'              : 2.0*INCH2MM,
         'thickness'          : 0.064*INCH2MM,
         'mount_hole_diam'    : 0.257*INCH2MM,

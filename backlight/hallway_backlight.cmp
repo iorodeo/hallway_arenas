@@ -1,0 +1,682 @@
+Cmp-Mod V01 Created by CVpcb (20090216-final) date = Mon 25 Jul 2011 04:05:52 PM PDT
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,0;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,1;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,2;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,3;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,4;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,5;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,6;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,7;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,8;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,9;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,10;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,11;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,12;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,13;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,14;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D0,15;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,0;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,1;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,2;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,3;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,4;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,5;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,6;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,7;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,8;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,9;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,10;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,11;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,12;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,13;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,14;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D1,15;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,0;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,1;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,2;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,3;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,4;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,5;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,6;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,7;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,8;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,9;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,10;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,11;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,12;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,13;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,14;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D2,15;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,0;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,1;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,2;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,3;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,4;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,5;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,6;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,7;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,8;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,9;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,10;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,11;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,12;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,13;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,14;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D3,15;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,0;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,1;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,2;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,3;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,4;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,5;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,6;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,7;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,8;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,9;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,10;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,11;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,12;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,13;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,14;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D4,15;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,0;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,1;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,2;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,3;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,4;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,5;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,6;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,7;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,8;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,9;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,10;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,11;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,12;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,13;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,14;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF4E1;
+Reference = D5,15;
+ValeurCmp = LED;
+IdModule  = VSMG3700;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2DF59A;
+Reference = P1;
+ValeurCmp = CONN_2;
+IdModule  = DCJACK_2PIN_HIGHCURRENT;
+EndCmp
+
+EndListe
