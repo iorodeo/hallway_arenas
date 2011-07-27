@@ -3,6 +3,7 @@
 import copy
 
 INCH2MM = 25.4
+MM2INCH = 1.0/INCH2MM
 
 # -----------------------------------------------------------------------------
 # Utilty funcitons - for dependent parameters
@@ -157,12 +158,13 @@ panels_pcb = {
         'mount_hole_diameter'   : 0.26*INCH2MM, # 1/4 through hole
         'mount_hole_space'      : hallway_bottom_plate['mount_hole_space'],
         'num_panels'            : 7,
-        'panel_space_tol'       : 0.005*INCH2MM,
+        'panel_space_tol'       : 0.008*INCH2MM,
         'panel_header_overlap'  : 0.11*INCH2MM,
         'panel_header_offset'   : 0.129*INCH2MM,
         'color'                 : (0.0, 1.0, 0.0, 1.0),
         }
 panels_pcb['mount_hole_offset'] = get_panels_pcb_offset()
+#print 'mount_hole_offset', MM2INCH*panels_pcb['mount_hole_offset']
 
 header = {
         'length'   : 0.822*INCH2MM, 
@@ -172,8 +174,8 @@ header = {
         }
 
 panel = {
-        'length'   : 1.26*INCH2MM, 
-        'height'   : 1.26*INCH2MM,
+        'length'   : 1.27*INCH2MM, 
+        'height'   : 1.27*INCH2MM,
         'width'    : 0.458*INCH2MM,
         'color'    : (0.0, 0.0, 1.0, 1.0),
         }

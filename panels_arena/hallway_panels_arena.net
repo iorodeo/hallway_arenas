@@ -1,0 +1,178 @@
+# EESchema Netlist Version 1.1 created  Tue 26 Jul 2011 06:23:50 PM PDT
+(
+ ( /4E2F5895 JFRC_Capacitor_Polarized C1 10uF
+  ( 1 /5V )
+  ( 2 GND )
+ )
+ ( /4E2F57E4 JFRC_Capacitor_Polarized C2 10uF
+  ( 1 /5V )
+  ( 2 GND )
+ )
+ ( /4E2F5712 DB9_M09 J1 DB9
+  ( 1 /SCL1 )
+  ( 2 /SDA1 )
+  ( 3 /SCL2 )
+  ( 4 /SDA2 )
+  ( 5 GND )
+  ( 6 /SCL0 )
+  ( 7 /SCL3 )
+  ( 8 /SDA0 )
+  ( 9 /SDA3 )
+ )
+ ( /4E2F54C5 DB9_M09 J2 DB9
+  ( 1 /SCL1 )
+  ( 2 /SDA1 )
+  ( 3 /SCL2 )
+  ( 4 /SDA2 )
+  ( 5 GND )
+  ( 6 /SCL0 )
+  ( 7 /SCL3 )
+  ( 8 /SDA0 )
+  ( 9 /SDA3 )
+ )
+ ( /4E2F56DF HEADER_5x2_LARGE P1 CONN_5X2
+  ( 1 /SCL1 )
+  ( 2 /SCL0 )
+  ( 3 /SDA1 )
+  ( 4 /SCL3 )
+  ( 5 /SCL2 )
+  ( 6 /SDA0 )
+  ( 7 /SDA2 )
+  ( 8 /SDA3 )
+  ( 9 GND )
+  ( 10 GND )
+ )
+ ( /4E2F55C9 pin_array_4x2 P2 CONN_4X2
+  ( 1 /SCL0 )
+  ( 2 /SCL )
+  ( 3 /SCL1 )
+  ( 4 /SCL )
+  ( 5 /SCL2 )
+  ( 6 /SCL )
+  ( 7 /SCL3 )
+  ( 8 /SCL )
+ )
+ ( /4E2F5896 DCJACK_2PIN_HIGHCURRENT P3 CONN_2
+  ( 1 N-000002 )
+  ( 2 GND )
+ )
+ ( /4E2F57A6 HEADER_5x2_LARGE P4 CONN_5X2
+  ( 1 /SCL1 )
+  ( 2 /SCL0 )
+  ( 3 /SDA1 )
+  ( 4 /SCL3 )
+  ( 5 /SCL2 )
+  ( 6 /SDA0 )
+  ( 7 /SDA2 )
+  ( 8 /SDA3 )
+  ( 9 GND )
+  ( 10 GND )
+ )
+ ( /4E2F563F pin_array_4x2 P5 CONN_4X2
+  ( 1 /SDA0 )
+  ( 2 /SDA )
+  ( 3 /SDA1 )
+  ( 4 /SDA )
+  ( 5 /SDA2 )
+  ( 6 /SDA )
+  ( 7 /SDA3 )
+  ( 8 /SDA )
+ )
+ ( /4E2F5B53 DCJACK_2PIN_HIGHCURRENT P6 CONN_2
+  ( 1 N-000002 )
+  ( 2 GND )
+ )
+ ( /4E2F58D5 JFRC_1X08 P7 CONN_8
+  ( 1 /SCL )
+  ( 2 /SDA )
+  ( 3 /5V )
+  ( 4 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 /5V )
+  ( 8 GND )
+ )
+ ( /4E2F5990 JFRC_1X08 P8 CONN_8
+  ( 1 /SCL )
+  ( 2 /SDA )
+  ( 3 /5V )
+  ( 4 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 /5V )
+  ( 8 GND )
+ )
+ ( /4E2F5996 JFRC_1X08 P9 CONN_8
+  ( 1 /SCL )
+  ( 2 /SDA )
+  ( 3 /5V )
+  ( 4 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 /5V )
+  ( 8 GND )
+ )
+ ( /4E2F59A0 JFRC_1X08 P10 CONN_8
+  ( 1 /SCL )
+  ( 2 /SDA )
+  ( 3 /5V )
+  ( 4 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 /5V )
+  ( 8 GND )
+ )
+ ( /4E2F597F JFRC_1X08 P11 CONN_8
+  ( 1 /SCL )
+  ( 2 /SDA )
+  ( 3 /5V )
+  ( 4 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 /5V )
+  ( 8 GND )
+ )
+ ( /4E2F5992 JFRC_1X08 P12 CONN_8
+  ( 1 /SCL )
+  ( 2 /SDA )
+  ( 3 /5V )
+  ( 4 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 /5V )
+  ( 8 GND )
+ )
+ ( /4E2F5998 JFRC_1X08 P13 CONN_8
+  ( 1 /SCL )
+  ( 2 /SDA )
+  ( 3 /5V )
+  ( 4 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 /5V )
+  ( 8 GND )
+ )
+ ( /4E2F5AAC JFRC_LPV-1 SW1 SWITCH_INV
+  ( 1 N-000002 )
+  ( 2 /5V )
+  ( 3 ? )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ CP*
+ SM*
+$endlist
+$component C2
+ CP*
+ SM*
+$endlist
+$component J1
+ DB9*
+$endlist
+$component J2
+ DB9*
+$endlist
+$endfootprintlist
+}

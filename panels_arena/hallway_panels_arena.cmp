@@ -1,0 +1,129 @@
+Cmp-Mod V01 Created by CVpcb (20090216-final) date = Tue 26 Jul 2011 06:23:50 PM PDT
+
+BeginCmp
+TimeStamp = /4E2F5895;
+Reference = C1;
+ValeurCmp = 10uF;
+IdModule  = JFRC_Capacitor_Polarized;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F57E4;
+Reference = C2;
+ValeurCmp = 10uF;
+IdModule  = JFRC_Capacitor_Polarized;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F5712;
+Reference = J1;
+ValeurCmp = DB9;
+IdModule  = DB9_M09;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F54C5;
+Reference = J2;
+ValeurCmp = DB9;
+IdModule  = DB9_M09;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F56DF;
+Reference = P1;
+ValeurCmp = CONN_5X2;
+IdModule  = HEADER_5x2_LARGE;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F55C9;
+Reference = P2;
+ValeurCmp = CONN_4X2;
+IdModule  = pin_array_4x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F5896;
+Reference = P3;
+ValeurCmp = CONN_2;
+IdModule  = DCJACK_2PIN_HIGHCURRENT;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F57A6;
+Reference = P4;
+ValeurCmp = CONN_5X2;
+IdModule  = HEADER_5x2_LARGE;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F563F;
+Reference = P5;
+ValeurCmp = CONN_4X2;
+IdModule  = pin_array_4x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F5B53;
+Reference = P6;
+ValeurCmp = CONN_2;
+IdModule  = DCJACK_2PIN_HIGHCURRENT;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F58D5;
+Reference = P7;
+ValeurCmp = CONN_8;
+IdModule  = JFRC_1X08;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F5990;
+Reference = P8;
+ValeurCmp = CONN_8;
+IdModule  = JFRC_1X08;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F5996;
+Reference = P9;
+ValeurCmp = CONN_8;
+IdModule  = JFRC_1X08;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F59A0;
+Reference = P10;
+ValeurCmp = CONN_8;
+IdModule  = JFRC_1X08;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F597F;
+Reference = P11;
+ValeurCmp = CONN_8;
+IdModule  = JFRC_1X08;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F5992;
+Reference = P12;
+ValeurCmp = CONN_8;
+IdModule  = JFRC_1X08;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F5998;
+Reference = P13;
+ValeurCmp = CONN_8;
+IdModule  = JFRC_1X08;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E2F5AAC;
+Reference = SW1;
+ValeurCmp = SWITCH_INV;
+IdModule  = JFRC_LPV-1;
+EndCmp
+
+EndListe
