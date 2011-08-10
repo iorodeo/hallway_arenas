@@ -1,11 +1,42 @@
-EESchema Schematic File Version 2  date Mon 25 Jul 2011 06:36:07 PM PDT
-LIBS:power,device,transistors,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,opto,atmel,contrib,valves,./hallway_backlight.cache
+EESchema Schematic File Version 2  date Thu 28 Jul 2011 12:07:36 PM PDT
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:hallway_backlight-cache
 EELAYER 24  0
 EELAYER END
 $Descr A4 11700 8267
+encoding utf-8
 Sheet 1 1
 Title ""
-Date "25 jul 2011"
+Date "28 jul 2011"
 Rev ""
 Comp ""
 Comment1 ""
@@ -16,25 +47,25 @@ $EndDescr
 $Comp
 L PWR_FLAG #FLG01
 U 1 1 4E2DF68E
-P 10600 1350
-F 0 "#FLG01" H 10600 1620 30  0001 C CNN
-F 1 "PWR_FLAG" H 10600 1580 30  0000 C CNN
-	1    10600 1350
+P 10150 2000
+F 0 "#FLG01" H 10150 2270 30  0001 C CNN
+F 1 "PWR_FLAG" H 10150 2230 30  0000 C CNN
+	1    10150 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR02
 U 1 1 4E2DF67F
-P 10600 1600
-F 0 "#PWR02" H 10600 1600 30  0001 C CNN
-F 1 "GND" H 10600 1530 30  0001 C CNN
-	1    10600 1600
+P 10150 2250
+F 0 "#PWR02" H 10150 2250 30  0001 C CNN
+F 1 "GND" H 10150 2180 30  0001 C CNN
+	1    10150 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10600 1350 10600 1600
+	10150 2000 10150 2250
 Wire Wire Line
-	1500 1300 1100 1300
+	9100 1900 8700 1900
 Wire Wire Line
 	10000 5000 10200 5000
 Wire Wire Line
@@ -256,33 +287,33 @@ Wire Wire Line
 Wire Wire Line
 	1200 3000 900  3000
 Wire Wire Line
-	1500 1500 1100 1500
+	9100 2100 8700 2100
 Wire Wire Line
-	1100 1500 1100 1650
+	8700 2100 8700 2250
 Text Label 10900 5400 0    60   ~ 0
 GND
-Text Label 1100 1650 0    60   ~ 0
+Text Label 8700 2250 0    60   ~ 0
 GND
 Text Label 900  2600 3    60   ~ 0
 VIN
-Text Label 1100 1300 0    60   ~ 0
+Text Label 8700 1900 0    60   ~ 0
 VIN
 $Comp
 L GND #PWR03
 U 1 1 4E2DF60D
-P 1100 1650
-F 0 "#PWR03" H 1100 1650 30  0001 C CNN
-F 1 "GND" H 1100 1580 30  0001 C CNN
-	1    1100 1650
+P 8700 2250
+F 0 "#PWR03" H 8700 2250 30  0001 C CNN
+F 1 "GND" H 8700 2180 30  0001 C CNN
+	1    8700 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_2 P1
 U 1 1 4E2DF59A
-P 1850 1400
-F 0 "P1" V 1800 1400 40  0000 C CNN
-F 1 "CONN_2" V 1900 1400 40  0000 C CNN
-	1    1850 1400
+P 9450 2000
+F 0 "P1" V 9400 2000 40  0000 C CNN
+F 1 "CONN_2" V 9500 2000 40  0000 C CNN
+	1    9450 2000
 	1    0    0    -1  
 $EndComp
 $Comp

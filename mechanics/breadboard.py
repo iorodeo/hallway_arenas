@@ -30,8 +30,8 @@ class Breadboard(Part):
                 pos_y += hole_spacing
 
         # Create bread board
-        breadboard = plate_w_holes(length, width, thickness, hole_list)
-        #breadboard = plate_w_holes(length, width, thickness, [])
+        #breadboard = plate_w_holes(length, width, thickness, hole_list)
+        breadboard = plate_w_holes(length, width, thickness, [])
         self.part = Color(breadboard,rgba=color)
 
 

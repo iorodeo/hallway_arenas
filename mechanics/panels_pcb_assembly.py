@@ -46,7 +46,7 @@ class Panels_PCB_Assembly(Assembly):
         y_pos_panels = panel_header_offset + panel_offset
 
         for x_pos in panels_pos:
-            print 8+x_pos/INCH2MM, 3+y_pos_header/INCH2MM
+            #print 8+x_pos/INCH2MM, 3+y_pos_header/INCH2MM
             # Create header
             header_temp = Header(**self.params.header)
             header_temp.translate(v=(x_pos,y_pos_header,z_pos_header))
