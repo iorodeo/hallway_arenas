@@ -1,7 +1,12 @@
 Hallway Arena Mechanics - bill of materials
 
 
-Description    i                                                                                        Vendor          Part#       Price      Qty     Purchased
+
+===========
+Stock parts
+===========
+
+Description                                                                                             Vendor          Part#       Price      Qty     Purchased
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * 12"x12"x0.5" aluminum breadboard 1/4-20 threaded,                                                     Thorlabs,        MB12       $161.10     1         yes
 
@@ -24,6 +29,36 @@ Description    i                                                                
 * std zinc-plated STL end-feed fastener, for 1" aluminum inch T-slotted framing system, packs of 4      McMaster-Carr    47065T142  $2.30       2
 
 * black-oxide SS button head socket cap screw 1/4"-20 thread, 1/2" length, packs of 50                  McMaster-Carr    97763A263  $11.03      1
+
+* cable tie holder, screw mount, 2-way heavy duty, for .12" max tie width, packs of 100                 McMaster-Carr    7566K12    $8.75       1
+
+* solid colored nylon cable tie 4-1/8" length, 7/8" bundle diameter, pack of 100                        McMaster-Carr    71295K62   $2.04       1
+
+* clear extruded acrylic square tube 1/2" square, 6' length                                             McMaster-Carr    8516K33    $4.49       1
+
+* pager motor 
+
+
+
+============
+Custom parts
+============
+
+Description                                                                                             Vendor
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* hallway arena panels PCB, design files and BOM in panels_arena subdirectory                           IO Rodeo Inc.             
+
+* hallway arena backlight PCB, design files and BOM in backlight subdirectory                           IO Rodeo Inc.
+
+* hallway top plate, custom laser cut acrylic part, design files in mechanics subdirectory              IO Rodeo Inc.
+
+* hallway bottom plate, custom laser cut acrylic part, deisgn files in mechanics subdirectory           IO Rodeo Inc.
+
+* backlight diffuser plate, custom laser cut acylic part, design files in mechanics subdirectory        IO Rodeo Inc.
+
+* Solid state relay board for Arduino Nano                                                              IO Rodeo Inc.
+
+* Programmable LED current controller,                                                                  IO Rodeo Inc. 
 
 
 
