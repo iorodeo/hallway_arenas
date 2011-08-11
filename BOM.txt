@@ -1,0 +1,29 @@
+Hallway Arena Mechanics - bill of materials
+
+
+Description    i                                                                                        Vendor          Part#       Price      Qty     Purchased
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* 12"x12"x0.5" aluminum breadboard 1/4-20 threaded,                                                     Thorlabs,        MB12       $161.10     1         yes
+
+* vibration damping sandwich mount, male/male 1/4-20, neoprene, 5/8H x 5/8W                             Mcmaster-Carr    9213K57    $1.58       16        
+
+* (option 1) aluminum female threaded hex standoff 1/2" hex, 1-1/2" length, 1/4"-20 screw size          McMaster-Carr    91780A361  $3.03       12
+  (option 2) aluminum female threaded hex standoff 1/2" Hex, 2" length, 1/4"-20 screw size              McMaster-Carr    91780A362  $3.98       12
+
+* aluminum unthreaded spacer 1/2" OD, 1/4" length, 1/4" screw size                                      McMaster-Carr    92510A762  $1.39       4  
+
+* aluminum female threaded hex standoff 1/2" hex, 1/2" length, 1/4"-20 screw size                       McMaster-Carr    91780A355  $2.08       4 
+
+* (option 1) aluminum inch T-slotted framing system six-slot double, 1" solid extrusion, 2' length      McMaster-Carr    47065T213  $12.85      2
+  (option 2) aluminum inch T-slotted framing system six-slot double, 1" solid extrusion, 4' length      McMaster-Carr    47065T124  $22.98      2
+
+* aluminum inch T-slotted framing system extended 90 degree bracket, single, 4-hole, for 1"             McMaster-Carr    47065T175  $4.54       6
+
+* double end-feed fastener, for 1" aluminum inch T-slotted framing system, packs of 4                   McMaster-Carr    47065T147  $4.29       2
+
+* std zinc-plated STL end-feed fastener, for 1" aluminum inch T-slotted framing system, packs of 4      McMaster-Carr    47065T142  $2.30       2
+
+* black-oxide SS button head socket cap screw 1/4"-20 thread, 1/2" length, packs of 50                  McMaster-Carr    97763A263  $11.03      1
+
+
+

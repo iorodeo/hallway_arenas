@@ -48,7 +48,8 @@ arena_tube = {
 vibration_grommet = {
         'outer_diameter' : 0.625*INCH2MM, 
         'hole_diameter'  : 0.270*INCH2MM,
-        'height'         : 0.325*INCH2MM,
+        #'height'         : 0.325*INCH2MM,
+        'height'         : 0.625*INCH2MM,
         'inner_height'   : 0.062*INCH2MM,
         'inner_diameter' : 0.375*INCH2MM,
         'color'          : (0.8, 0.0, 0.0, 1.0), 
@@ -117,7 +118,7 @@ diffuser = {
 
 hallway_standoff =  {
         'diameter'      : 0.5*INCH2MM, 
-        'length'        : 2.0*INCH2MM,
+        'length'        : 1.5*INCH2MM,
         'hole_diameter' : 0.2*INCH2MM,  # 1/4-20
         'type'          : 'male-female',
         'male_length'   : 0.5*INCH2MM,
@@ -126,7 +127,7 @@ hallway_standoff =  {
 
 panels_standoff =  {
         'diameter'      : 0.5*INCH2MM, 
-        'length'        : 2.0*INCH2MM,
+        'length'        : 1.5*INCH2MM,
         'hole_diameter' : 0.2*INCH2MM,  # 1/4-20
         'type'          : 'male-female',
         'male_length'   : 0.5*INCH2MM,
@@ -135,7 +136,7 @@ panels_standoff =  {
 
 backlight_standoff = {
         'diameter'      : 0.5*INCH2MM,
-        'length'        : 0.75*INCH2MM,
+        'length'        : 0.25*INCH2MM,
         'hole_diameter' : 0.2*INCH2MM,  # 1/4-20
         'type'          : 'male-female',
         'male_length'   : 0.5*INCH2MM, 
