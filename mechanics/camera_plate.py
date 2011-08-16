@@ -46,3 +46,16 @@ if __name__ == '__main__':
     prog.fn = 50
     prog.add(part)
     prog.write('camera_plate.scad')
+
+    part.projection()
+    refCube = Cube(size=(INCH2MM,INCH2MM,INCH2MM)) 
+    y_shift = 0.5*params.camera_plate['width'] 
+    y_shift += params.camera_plate['thickness'] 
+    y_shift += 0.5*INCH2MM 
+    refCube = Translate(refCube,v=(0,y_shift,0))
+    refCube = Projection(refCube)
+    prog = SCAD_Prog()
+    prog.fn = 50
+    prog.add(part)
+    prog.add(refCube)
+    prog.write('camera_plate_projection.scad')
