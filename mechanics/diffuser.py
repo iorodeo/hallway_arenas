@@ -31,3 +31,16 @@ if __name__ == '__main__':
     prog.fn = 50
     prog.add(part)
     prog.write('diffuser.scad')
+
+    part.projection()
+    refCube = Cube(size=(INCH2MM,INCH2MM,INCH2MM)) 
+    y_shift = 0.5*params.diffuser['width'] 
+    y_shift += 2*params.diffuser['thickness'] 
+    y_shift += 0.5*INCH2MM 
+    refCube = Translate(refCube,v=(0,y_shift,0))
+    refCube = Projection(refCube)
+    prog = SCAD_Prog()
+    prog.fn = 50
+    prog.add(part)
+    prog.add(refCube)
+    prog.write('diffuser_projection.scad')

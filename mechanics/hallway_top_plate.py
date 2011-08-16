@@ -40,3 +40,16 @@ if __name__ == '__main__':
     prog.fn = 50
     prog.add(plate)
     prog.write('hallway_top_plate.scad')
+
+    plate.projection()
+    refCube = Cube(size=(INCH2MM,INCH2MM,INCH2MM)) 
+    y_shift = 0.5*params.hallway_top_plate['width'] 
+    y_shift += 2*params.hallway_top_plate['thickness'] 
+    y_shift += 0.5*INCH2MM 
+    refCube = Translate(refCube,v=(0,y_shift,0))
+    refCube = Projection(refCube)
+    prog = SCAD_Prog()
+    prog.fn = 50
+    prog.add(plate)
+    prog.add(refCube)
+    prog.write('hallway_top_plate_projection.scad')
