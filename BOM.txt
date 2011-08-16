@@ -1,8 +1,5 @@
 Hallway Arena Mechanics - bill of materials
 
-
-
-===========
 Stock parts
 ===========
 
@@ -10,55 +7,54 @@ Description                                                                     
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * 12"x12"x0.5" aluminum breadboard 1/4-20 threaded,                                                     Thorlabs,        MB12       $161.10     1         yes
 
-* vibration damping sandwich mount, male/male 1/4-20, neoprene, 5/8H x 5/8W                             Mcmaster-Carr    9213K57    $1.58       16        
+* vibration damping sandwich mount, male/male 1/4-20, neoprene, 5/8H x 5/8W                             Mcmaster-Carr    9213K57    $1.58       16        yes
 
-* (option 1) aluminum female threaded hex standoff 1/2" hex, 1-1/2" length, 1/4"-20 screw size          McMaster-Carr    91780A361  $3.03       12
-  (option 2) aluminum female threaded hex standoff 1/2" Hex, 2" length, 1/4"-20 screw size              McMaster-Carr    91780A362  $3.98       12
+* (option 1) aluminum female threaded hex standoff 1/2" hex, 1-1/2" length, 1/4"-20 screw size          McMaster-Carr    91780A361  $3.03       12        yes
+  (option 2) aluminum female threaded hex standoff 1/2" Hex, 2" length, 1/4"-20 screw size              McMaster-Carr    91780A362  $3.98       12        yes
 
-* aluminum unthreaded spacer 1/2" OD, 1/4" length, 1/4" screw size                                      McMaster-Carr    92510A762  $1.39       4  
+* aluminum unthreaded spacer 1/2" OD, 1/4" length, 1/4" screw size                                      McMaster-Carr    92510A762  $1.39       4         yes
 
-* aluminum female threaded hex standoff 1/2" hex, 1/2" length, 1/4"-20 screw size                       McMaster-Carr    91780A355  $2.08       4 
+* aluminum female threaded hex standoff 1/2" hex, 1/2" length, 1/4"-20 screw size                       McMaster-Carr    91780A355  $2.08       4         yes
 
-* (option 1) aluminum inch T-slotted framing system six-slot double, 1" solid extrusion, 2' length      McMaster-Carr    47065T213  $12.85      2
+* (option 1) aluminum inch T-slotted framing system six-slot double, 1" solid extrusion, 2' length      McMaster-Carr    47065T213  $12.85      2         yes
   (option 2) aluminum inch T-slotted framing system six-slot double, 1" solid extrusion, 4' length      McMaster-Carr    47065T124  $22.98      2
 
-* aluminum inch T-slotted framing system extended 90 degree bracket, single, 4-hole, for 1"             McMaster-Carr    47065T175  $4.54       6
+* aluminum inch T-slotted framing system extended 90 degree bracket, single, 4-hole, for 1"             McMaster-Carr    47065T175  $4.54       6         yes
 
-* double end-feed fastener, for 1" aluminum inch T-slotted framing system, packs of 4                   McMaster-Carr    47065T147  $4.29       2
+* double end-feed fastener, for 1" aluminum inch T-slotted framing system, packs of 4                   McMaster-Carr    47065T147  $4.29       2         yes
 
-* std zinc-plated STL end-feed fastener, for 1" aluminum inch T-slotted framing system, packs of 4      McMaster-Carr    47065T142  $2.30       2
+* std zinc-plated STL end-feed fastener, for 1" aluminum inch T-slotted framing system, packs of 4      McMaster-Carr    47065T142  $2.30       2         yes
 
-* black-oxide SS button head socket cap screw 1/4"-20 thread, 1/2" length, packs of 50                  McMaster-Carr    97763A263  $11.03      1
+* black-oxide SS button head socket cap screw 1/4"-20 thread, 1/2" length, packs of 50                  McMaster-Carr    97763A263  $11.03      1         yes
 
-* cable tie holder, screw mount, 2-way heavy duty, for .12" max tie width, packs of 100                 McMaster-Carr    7566K12    $8.75       1
+* cable tie holder, screw mount, 2-way heavy duty, for .12" max tie width, packs of 100                 McMaster-Carr    7566K12    $8.75       1         yes
 
-* solid colored nylon cable tie 4-1/8" length, 7/8" bundle diameter, pack of 100                        McMaster-Carr    71295K62   $2.04       1
+* solid colored nylon cable tie 4-1/8" length, 7/8" bundle diameter, pack of 100                        McMaster-Carr    71295K62   $2.04       1         yes
 
-* clear extruded acrylic square tube 1/2" square, 6' length                                             McMaster-Carr    8516K33    $4.49       1
+* clear extruded acrylic square tube 1/2" square, 6' length                                             McMaster-Carr    8516K33    $4.49       1         yes
 
-* pager motor 
+* 3V DC pager motor  diam. 0.28 x length 0.66                                                           Jameco           256382     $4.65       4         
 
 
 
-============
 Custom parts
 ============
 
-Description                                                                                             Vendor
+Description                                                                                             Vendor                                   Qty
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-* hallway arena panels PCB, design files and BOM in panels_arena subdirectory                           IO Rodeo Inc.             
+* hallway arena panels PCB, design files and BOM in panels_arena subdirectory                           IO Rodeo Inc.                             4 
 
-* hallway arena backlight PCB, design files and BOM in backlight subdirectory                           IO Rodeo Inc.
+* hallway arena backlight PCB, design files and BOM in backlight subdirectory                           IO Rodeo Inc.                             2 
 
-* hallway top plate, custom laser cut acrylic part, design files in mechanics subdirectory              IO Rodeo Inc.
+* hallway top plate, custom laser cut acrylic part, design files in mechanics subdirectory              IO Rodeo Inc.                             2
 
-* hallway bottom plate, custom laser cut acrylic part, deisgn files in mechanics subdirectory           IO Rodeo Inc.
+* hallway bottom plate, custom laser cut acrylic part, deisgn files in mechanics subdirectory           IO Rodeo Inc.                             2
 
-* backlight diffuser plate, custom laser cut acylic part, design files in mechanics subdirectory        IO Rodeo Inc.
+* backlight diffuser plate, custom laser cut acylic part, design files in mechanics subdirectory        IO Rodeo Inc.                             2
 
-* Solid state relay board for Arduino Nano                                                              IO Rodeo Inc.
+* Solid state relay board for Arduino Nano                                                              IO Rodeo Inc.                             1
 
-* Programmable LED current controller,                                                                  IO Rodeo Inc. 
+* Programmable LED current controller,                                                                  IO Rodeo Inc.                             1
 
 
 

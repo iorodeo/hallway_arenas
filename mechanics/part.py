@@ -28,6 +28,9 @@ class Part(object):
     def color(self,rgba=(0,0,0,0)):
         self.part = Color(self.part,rgba=rgba)
 
+    def projection(self):
+        self.part = Projection(self.part)
+
     def get_vconfig_obj(self,name):
         
         color = self.params['color'][0:3]

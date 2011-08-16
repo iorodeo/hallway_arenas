@@ -1,0 +1,5 @@
+
+Description                         Vendor       PN           Price       Qty
+------------------------------------------------------------------------------
+LED VSMG3700 850nm                  Digikey   751-1256-1-ND   $0.8613      96 
+CONN PWR JACK DC 2.1X5.5 8A T/H     Digikey   CP-063AH-ND     $1.55        1

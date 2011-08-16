@@ -64,9 +64,20 @@ if __name__ == '__main__':
 
     import params
     plate = Hallway_Bottom_Plate(**params.hallway_bottom_plate)
+    
     prog = SCAD_Prog()
     prog.fn = 50
     prog.add(plate)
     prog.write('hallway_bottom_plate.scad')
+
+    plate.projection()
+
+    prog = SCAD_Prog()
+    prog.fn = 50
+    prog.add(plate)
+    prog.write('hallway_bottom_plate_projection.scad')
+
+
+
 
 
