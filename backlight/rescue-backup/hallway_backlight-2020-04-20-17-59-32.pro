@@ -1,5 +1,5 @@
-update=Mon 20 Apr 2020 05:59:35 PM PDT
-last_client=kicad
+update=Mon 25 Jul 2011 04:05:37 PM PDT
+last_client=cvpcb
 [general]
 version=1
 RootSch=hallway_backlight.sch
@@ -59,6 +59,3 @@ NetIExt=.net
 EquName1=devcms
 [common]
 NetDir=
-[eeschema]
-version=1
-LibDir=

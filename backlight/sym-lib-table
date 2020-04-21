@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name hallway_backlight-rescue)(type Legacy)(uri ${KIPRJMOD}/hallway_backlight-rescue.lib)(options "")(descr ""))
+)

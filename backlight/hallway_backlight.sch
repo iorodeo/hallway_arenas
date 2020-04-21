@@ -1,38 +1,8 @@
-EESchema Schematic File Version 2  date Thu 28 Jul 2011 12:07:36 PM PDT
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:special
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:hallway_backlight-cache
-EELAYER 24  0
+EELAYER 26 0
 EELAYER END
-$Descr A4 11700 8267
+$Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -45,20 +15,24 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PWR_FLAG #FLG01
+L hallway_backlight-rescue:PWR_FLAG #FLG01
 U 1 1 4E2DF68E
 P 10150 2000
 F 0 "#FLG01" H 10150 2270 30  0001 C CNN
 F 1 "PWR_FLAG" H 10150 2230 30  0000 C CNN
+F 2 "" H 10150 2000 50  0001 C CNN
+F 3 "" H 10150 2000 50  0001 C CNN
 	1    10150 2000
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L hallway_backlight-rescue:GND #PWR02
 U 1 1 4E2DF67F
 P 10150 2250
 F 0 "#PWR02" H 10150 2250 30  0001 C CNN
 F 1 "GND" H 10150 2180 30  0001 C CNN
+F 2 "" H 10150 2250 50  0001 C CNN
+F 3 "" H 10150 2250 50  0001 C CNN
 	1    10150 2250
 	1    0    0    -1  
 $EndComp
@@ -248,15 +222,13 @@ Wire Wire Line
 	1600 3000 1800 3000
 Connection ~ 10900 5000
 Wire Wire Line
-	10900 5400 10900 3000
+	10900 5400 10900 5000
 Connection ~ 10900 4600
 Connection ~ 10900 4200
 Connection ~ 10900 3800
 Connection ~ 10900 3400
-Connection ~ 10900 3000
-Connection ~ 900  5000
 Wire Wire Line
-	900  2600 900  5000
+	900  2600 900  3000
 Connection ~ 900  4600
 Connection ~ 900  4200
 Connection ~ 900  3800
@@ -299,894 +271,1112 @@ VIN
 Text Label 8700 1900 0    60   ~ 0
 VIN
 $Comp
-L GND #PWR03
+L hallway_backlight-rescue:GND #PWR03
 U 1 1 4E2DF60D
 P 8700 2250
 F 0 "#PWR03" H 8700 2250 30  0001 C CNN
 F 1 "GND" H 8700 2180 30  0001 C CNN
+F 2 "" H 8700 2250 50  0001 C CNN
+F 3 "" H 8700 2250 50  0001 C CNN
 	1    8700 2250
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_2 P1
+L hallway_backlight-rescue:CONN_2 P1
 U 1 1 4E2DF59A
 P 9450 2000
 F 0 "P1" V 9400 2000 40  0000 C CNN
 F 1 "CONN_2" V 9500 2000 40  0000 C CNN
+F 2 "" H 9450 2000 50  0001 C CNN
+F 3 "" H 9450 2000 50  0001 C CNN
 	1    9450 2000
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L hallway_backlight-rescue:GND #PWR04
 U 1 1 4E2DF51C
 P 10900 5400
 F 0 "#PWR04" H 10900 5400 30  0001 C CNN
 F 1 "GND" H 10900 5330 30  0001 C CNN
+F 2 "" H 10900 5400 50  0001 C CNN
+F 3 "" H 10900 5400 50  0001 C CNN
 	1    10900 5400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,7
+L hallway_backlight-rescue:LED D0,7
 U 1 1 4E2DF4E1
 P 5600 3000
 F 0 "D0,7" H 5600 3100 50  0000 C CNN
 F 1 "LED" H 5600 2900 50  0000 C CNN
+F 2 "" H 5600 3000 50  0001 C CNN
+F 3 "" H 5600 3000 50  0001 C CNN
 	1    5600 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,6
+L hallway_backlight-rescue:LED D1,6
 U 1 1 4E2DF4E1
 P 5000 3400
 F 0 "D1,6" H 5000 3500 50  0000 C CNN
 F 1 "LED" H 5000 3300 50  0000 C CNN
+F 2 "" H 5000 3400 50  0001 C CNN
+F 3 "" H 5000 3400 50  0001 C CNN
 	1    5000 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,10
+L hallway_backlight-rescue:LED D0,10
 U 1 1 4E2DF4E1
 P 7400 3000
 F 0 "D0,10" H 7400 3100 50  0000 C CNN
 F 1 "LED" H 7400 2900 50  0000 C CNN
+F 2 "" H 7400 3000 50  0001 C CNN
+F 3 "" H 7400 3000 50  0001 C CNN
 	1    7400 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,7
+L hallway_backlight-rescue:LED D3,7
 U 1 1 4E2DF4E1
 P 5600 4200
 F 0 "D3,7" H 5600 4300 50  0000 C CNN
 F 1 "LED" H 5600 4100 50  0000 C CNN
+F 2 "" H 5600 4200 50  0001 C CNN
+F 3 "" H 5600 4200 50  0001 C CNN
 	1    5600 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,5
+L hallway_backlight-rescue:LED D2,5
 U 1 1 4E2DF4E1
 P 4400 3800
 F 0 "D2,5" H 4400 3900 50  0000 C CNN
 F 1 "LED" H 4400 3700 50  0000 C CNN
+F 2 "" H 4400 3800 50  0001 C CNN
+F 3 "" H 4400 3800 50  0001 C CNN
 	1    4400 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,11
+L hallway_backlight-rescue:LED D1,11
 U 1 1 4E2DF4E1
 P 8000 3400
 F 0 "D1,11" H 8000 3500 50  0000 C CNN
 F 1 "LED" H 8000 3300 50  0000 C CNN
+F 2 "" H 8000 3400 50  0001 C CNN
+F 3 "" H 8000 3400 50  0001 C CNN
 	1    8000 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,8
+L hallway_backlight-rescue:LED D5,8
 U 1 1 4E2DF4E1
 P 6200 5000
 F 0 "D5,8" H 6200 5100 50  0000 C CNN
 F 1 "LED" H 6200 4900 50  0000 C CNN
+F 2 "" H 6200 5000 50  0001 C CNN
+F 3 "" H 6200 5000 50  0001 C CNN
 	1    6200 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,0
+L hallway_backlight-rescue:LED D4,0
 U 1 1 4E2DF4E1
 P 1400 4600
 F 0 "D4,0" H 1400 4700 50  0000 C CNN
 F 1 "LED" H 1400 4500 50  0000 C CNN
+F 2 "" H 1400 4600 50  0001 C CNN
+F 3 "" H 1400 4600 50  0001 C CNN
 	1    1400 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,5
+L hallway_backlight-rescue:LED D5,5
 U 1 1 4E2DF4E1
 P 4400 5000
 F 0 "D5,5" H 4400 5100 50  0000 C CNN
 F 1 "LED" H 4400 4900 50  0000 C CNN
+F 2 "" H 4400 5000 50  0001 C CNN
+F 3 "" H 4400 5000 50  0001 C CNN
 	1    4400 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,4
+L hallway_backlight-rescue:LED D0,4
 U 1 1 4E2DF4E1
 P 3800 3000
 F 0 "D0,4" H 3800 3100 50  0000 C CNN
 F 1 "LED" H 3800 2900 50  0000 C CNN
+F 2 "" H 3800 3000 50  0001 C CNN
+F 3 "" H 3800 3000 50  0001 C CNN
 	1    3800 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,1
+L hallway_backlight-rescue:LED D1,1
 U 1 1 4E2DF4E1
 P 2000 3400
 F 0 "D1,1" H 2000 3500 50  0000 C CNN
 F 1 "LED" H 2000 3300 50  0000 C CNN
+F 2 "" H 2000 3400 50  0001 C CNN
+F 3 "" H 2000 3400 50  0001 C CNN
 	1    2000 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,10
+L hallway_backlight-rescue:LED D4,10
 U 1 1 4E2DF4E1
 P 7400 4600
 F 0 "D4,10" H 7400 4700 50  0000 C CNN
 F 1 "LED" H 7400 4500 50  0000 C CNN
+F 2 "" H 7400 4600 50  0001 C CNN
+F 3 "" H 7400 4600 50  0001 C CNN
 	1    7400 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,2
+L hallway_backlight-rescue:LED D3,2
 U 1 1 4E2DF4E1
 P 2600 4200
 F 0 "D3,2" H 2600 4300 50  0000 C CNN
 F 1 "LED" H 2600 4100 50  0000 C CNN
+F 2 "" H 2600 4200 50  0001 C CNN
+F 3 "" H 2600 4200 50  0001 C CNN
 	1    2600 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,6
+L hallway_backlight-rescue:LED D2,6
 U 1 1 4E2DF4E1
 P 5000 3800
 F 0 "D2,6" H 5000 3900 50  0000 C CNN
 F 1 "LED" H 5000 3700 50  0000 C CNN
+F 2 "" H 5000 3800 50  0001 C CNN
+F 3 "" H 5000 3800 50  0001 C CNN
 	1    5000 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,11
+L hallway_backlight-rescue:LED D5,11
 U 1 1 4E2DF4E1
 P 8000 5000
 F 0 "D5,11" H 8000 5100 50  0000 C CNN
 F 1 "LED" H 8000 4900 50  0000 C CNN
+F 2 "" H 8000 5000 50  0001 C CNN
+F 3 "" H 8000 5000 50  0001 C CNN
 	1    8000 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,5
+L hallway_backlight-rescue:LED D4,5
 U 1 1 4E2DF4E1
 P 4400 4600
 F 0 "D4,5" H 4400 4700 50  0000 C CNN
 F 1 "LED" H 4400 4500 50  0000 C CNN
+F 2 "" H 4400 4600 50  0001 C CNN
+F 3 "" H 4400 4600 50  0001 C CNN
 	1    4400 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,1
+L hallway_backlight-rescue:LED D0,1
 U 1 1 4E2DF4E1
 P 2000 3000
 F 0 "D0,1" H 2000 3100 50  0000 C CNN
 F 1 "LED" H 2000 2900 50  0000 C CNN
+F 2 "" H 2000 3000 50  0001 C CNN
+F 3 "" H 2000 3000 50  0001 C CNN
 	1    2000 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,12
+L hallway_backlight-rescue:LED D3,12
 U 1 1 4E2DF4E1
 P 8600 4200
 F 0 "D3,12" H 8600 4300 50  0000 C CNN
 F 1 "LED" H 8600 4100 50  0000 C CNN
+F 2 "" H 8600 4200 50  0001 C CNN
+F 3 "" H 8600 4200 50  0001 C CNN
 	1    8600 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,12
+L hallway_backlight-rescue:LED D1,12
 U 1 1 4E2DF4E1
 P 8600 3400
 F 0 "D1,12" H 8600 3500 50  0000 C CNN
 F 1 "LED" H 8600 3300 50  0000 C CNN
+F 2 "" H 8600 3400 50  0001 C CNN
+F 3 "" H 8600 3400 50  0001 C CNN
 	1    8600 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,15
+L hallway_backlight-rescue:LED D4,15
 U 1 1 4E2DF4E1
 P 10400 4600
 F 0 "D4,15" H 10400 4700 50  0000 C CNN
 F 1 "LED" H 10400 4500 50  0000 C CNN
+F 2 "" H 10400 4600 50  0001 C CNN
+F 3 "" H 10400 4600 50  0001 C CNN
 	1    10400 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,1
+L hallway_backlight-rescue:LED D3,1
 U 1 1 4E2DF4E1
 P 2000 4200
 F 0 "D3,1" H 2000 4300 50  0000 C CNN
 F 1 "LED" H 2000 4100 50  0000 C CNN
+F 2 "" H 2000 4200 50  0001 C CNN
+F 3 "" H 2000 4200 50  0001 C CNN
 	1    2000 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,11
+L hallway_backlight-rescue:LED D2,11
 U 1 1 4E2DF4E1
 P 8000 3800
 F 0 "D2,11" H 8000 3900 50  0000 C CNN
 F 1 "LED" H 8000 3700 50  0000 C CNN
+F 2 "" H 8000 3800 50  0001 C CNN
+F 3 "" H 8000 3800 50  0001 C CNN
 	1    8000 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,14
+L hallway_backlight-rescue:LED D5,14
 U 1 1 4E2DF4E1
 P 9800 5000
 F 0 "D5,14" H 9800 5100 50  0000 C CNN
 F 1 "LED" H 9800 4900 50  0000 C CNN
+F 2 "" H 9800 5000 50  0001 C CNN
+F 3 "" H 9800 5000 50  0001 C CNN
 	1    9800 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,14
+L hallway_backlight-rescue:LED D0,14
 U 1 1 4E2DF4E1
 P 9800 3000
 F 0 "D0,14" H 9800 3100 50  0000 C CNN
 F 1 "LED" H 9800 2900 50  0000 C CNN
+F 2 "" H 9800 3000 50  0001 C CNN
+F 3 "" H 9800 3000 50  0001 C CNN
 	1    9800 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,11
+L hallway_backlight-rescue:LED D3,11
 U 1 1 4E2DF4E1
 P 8000 4200
 F 0 "D3,11" H 8000 4300 50  0000 C CNN
 F 1 "LED" H 8000 4100 50  0000 C CNN
+F 2 "" H 8000 4200 50  0001 C CNN
+F 3 "" H 8000 4200 50  0001 C CNN
 	1    8000 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,1
+L hallway_backlight-rescue:LED D2,1
 U 1 1 4E2DF4E1
 P 2000 3800
 F 0 "D2,1" H 2000 3900 50  0000 C CNN
 F 1 "LED" H 2000 3700 50  0000 C CNN
+F 2 "" H 2000 3800 50  0001 C CNN
+F 3 "" H 2000 3800 50  0001 C CNN
 	1    2000 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,15
+L hallway_backlight-rescue:LED D1,15
 U 1 1 4E2DF4E1
 P 10400 3400
 F 0 "D1,15" H 10400 3500 50  0000 C CNN
 F 1 "LED" H 10400 3300 50  0000 C CNN
+F 2 "" H 10400 3400 50  0001 C CNN
+F 3 "" H 10400 3400 50  0001 C CNN
 	1    10400 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,12
+L hallway_backlight-rescue:LED D4,12
 U 1 1 4E2DF4E1
 P 8600 4600
 F 0 "D4,12" H 8600 4700 50  0000 C CNN
 F 1 "LED" H 8600 4500 50  0000 C CNN
+F 2 "" H 8600 4600 50  0001 C CNN
+F 3 "" H 8600 4600 50  0001 C CNN
 	1    8600 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,12
+L hallway_backlight-rescue:LED D2,12
 U 1 1 4E2DF4E1
 P 8600 3800
 F 0 "D2,12" H 8600 3900 50  0000 C CNN
 F 1 "LED" H 8600 3700 50  0000 C CNN
+F 2 "" H 8600 3800 50  0001 C CNN
+F 3 "" H 8600 3800 50  0001 C CNN
 	1    8600 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,1
+L hallway_backlight-rescue:LED D5,1
 U 1 1 4E2DF4E1
 P 2000 5000
 F 0 "D5,1" H 2000 5100 50  0000 C CNN
 F 1 "LED" H 2000 4900 50  0000 C CNN
+F 2 "" H 2000 5000 50  0001 C CNN
+F 3 "" H 2000 5000 50  0001 C CNN
 	1    2000 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,5
+L hallway_backlight-rescue:LED D1,5
 U 1 1 4E2DF4E1
 P 4400 3400
 F 0 "D1,5" H 4400 3500 50  0000 C CNN
 F 1 "LED" H 4400 3300 50  0000 C CNN
+F 2 "" H 4400 3400 50  0001 C CNN
+F 3 "" H 4400 3400 50  0001 C CNN
 	1    4400 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,11
+L hallway_backlight-rescue:LED D0,11
 U 1 1 4E2DF4E1
 P 8000 3000
 F 0 "D0,11" H 8000 3100 50  0000 C CNN
 F 1 "LED" H 8000 2900 50  0000 C CNN
+F 2 "" H 8000 3000 50  0001 C CNN
+F 3 "" H 8000 3000 50  0001 C CNN
 	1    8000 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,6
+L hallway_backlight-rescue:LED D3,6
 U 1 1 4E2DF4E1
 P 5000 4200
 F 0 "D3,6" H 5000 4300 50  0000 C CNN
 F 1 "LED" H 5000 4100 50  0000 C CNN
+F 2 "" H 5000 4200 50  0001 C CNN
+F 3 "" H 5000 4200 50  0001 C CNN
 	1    5000 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,2
+L hallway_backlight-rescue:LED D2,2
 U 1 1 4E2DF4E1
 P 2600 3800
 F 0 "D2,2" H 2600 3900 50  0000 C CNN
 F 1 "LED" H 2600 3700 50  0000 C CNN
+F 2 "" H 2600 3800 50  0001 C CNN
+F 3 "" H 2600 3800 50  0001 C CNN
 	1    2600 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,10
+L hallway_backlight-rescue:LED D1,10
 U 1 1 4E2DF4E1
 P 7400 3400
 F 0 "D1,10" H 7400 3500 50  0000 C CNN
 F 1 "LED" H 7400 3300 50  0000 C CNN
+F 2 "" H 7400 3400 50  0001 C CNN
+F 3 "" H 7400 3400 50  0001 C CNN
 	1    7400 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,1
+L hallway_backlight-rescue:LED D4,1
 U 1 1 4E2DF4E1
 P 2000 4600
 F 0 "D4,1" H 2000 4700 50  0000 C CNN
 F 1 "LED" H 2000 4500 50  0000 C CNN
+F 2 "" H 2000 4600 50  0001 C CNN
+F 3 "" H 2000 4600 50  0001 C CNN
 	1    2000 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,4
+L hallway_backlight-rescue:LED D5,4
 U 1 1 4E2DF4E1
 P 3800 5000
 F 0 "D5,4" H 3800 5100 50  0000 C CNN
 F 1 "LED" H 3800 4900 50  0000 C CNN
+F 2 "" H 3800 5000 50  0001 C CNN
+F 3 "" H 3800 5000 50  0001 C CNN
 	1    3800 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,5
+L hallway_backlight-rescue:LED D0,5
 U 1 1 4E2DF4E1
 P 4400 3000
 F 0 "D0,5" H 4400 3100 50  0000 C CNN
 F 1 "LED" H 4400 2900 50  0000 C CNN
+F 2 "" H 4400 3000 50  0001 C CNN
+F 3 "" H 4400 3000 50  0001 C CNN
 	1    4400 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,0
+L hallway_backlight-rescue:LED D1,0
 U 1 1 4E2DF4E1
 P 1400 3400
 F 0 "D1,0" H 1400 3500 50  0000 C CNN
 F 1 "LED" H 1400 3300 50  0000 C CNN
+F 2 "" H 1400 3400 50  0001 C CNN
+F 3 "" H 1400 3400 50  0001 C CNN
 	1    1400 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,8
+L hallway_backlight-rescue:LED D0,8
 U 1 1 4E2DF4E1
 P 6200 3000
 F 0 "D0,8" H 6200 3100 50  0000 C CNN
 F 1 "LED" H 6200 2900 50  0000 C CNN
+F 2 "" H 6200 3000 50  0001 C CNN
+F 3 "" H 6200 3000 50  0001 C CNN
 	1    6200 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,11
+L hallway_backlight-rescue:LED D4,11
 U 1 1 4E2DF4E1
 P 8000 4600
 F 0 "D4,11" H 8000 4700 50  0000 C CNN
 F 1 "LED" H 8000 4500 50  0000 C CNN
+F 2 "" H 8000 4600 50  0001 C CNN
+F 3 "" H 8000 4600 50  0001 C CNN
 	1    8000 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,5
+L hallway_backlight-rescue:LED D3,5
 U 1 1 4E2DF4E1
 P 4400 4200
 F 0 "D3,5" H 4400 4300 50  0000 C CNN
 F 1 "LED" H 4400 4100 50  0000 C CNN
+F 2 "" H 4400 4200 50  0001 C CNN
+F 3 "" H 4400 4200 50  0001 C CNN
 	1    4400 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,7
+L hallway_backlight-rescue:LED D2,7
 U 1 1 4E2DF4E1
 P 5600 3800
 F 0 "D2,7" H 5600 3900 50  0000 C CNN
 F 1 "LED" H 5600 3700 50  0000 C CNN
+F 2 "" H 5600 3800 50  0001 C CNN
+F 3 "" H 5600 3800 50  0001 C CNN
 	1    5600 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,10
+L hallway_backlight-rescue:LED D5,10
 U 1 1 4E2DF4E1
 P 7400 5000
 F 0 "D5,10" H 7400 5100 50  0000 C CNN
 F 1 "LED" H 7400 4900 50  0000 C CNN
+F 2 "" H 7400 5000 50  0001 C CNN
+F 3 "" H 7400 5000 50  0001 C CNN
 	1    7400 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,6
+L hallway_backlight-rescue:LED D4,6
 U 1 1 4E2DF4E1
 P 5000 4600
 F 0 "D4,6" H 5000 4700 50  0000 C CNN
 F 1 "LED" H 5000 4500 50  0000 C CNN
+F 2 "" H 5000 4600 50  0001 C CNN
+F 3 "" H 5000 4600 50  0001 C CNN
 	1    5000 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,7
+L hallway_backlight-rescue:LED D5,7
 U 1 1 4E2DF4E1
 P 5600 5000
 F 0 "D5,7" H 5600 5100 50  0000 C CNN
 F 1 "LED" H 5600 4900 50  0000 C CNN
+F 2 "" H 5600 5000 50  0001 C CNN
+F 3 "" H 5600 5000 50  0001 C CNN
 	1    5600 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,2
+L hallway_backlight-rescue:LED D0,2
 U 1 1 4E2DF4E1
 P 2600 3000
 F 0 "D0,2" H 2600 3100 50  0000 C CNN
 F 1 "LED" H 2600 2900 50  0000 C CNN
+F 2 "" H 2600 3000 50  0001 C CNN
+F 3 "" H 2600 3000 50  0001 C CNN
 	1    2600 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,15
+L hallway_backlight-rescue:LED D3,15
 U 1 1 4E2DF4E1
 P 10400 4200
 F 0 "D3,15" H 10400 4300 50  0000 C CNN
 F 1 "LED" H 10400 4100 50  0000 C CNN
+F 2 "" H 10400 4200 50  0001 C CNN
+F 3 "" H 10400 4200 50  0001 C CNN
 	1    10400 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,3
+L hallway_backlight-rescue:LED D1,3
 U 1 1 4E2DF4E1
 P 3200 3400
 F 0 "D1,3" H 3200 3500 50  0000 C CNN
 F 1 "LED" H 3200 3300 50  0000 C CNN
+F 2 "" H 3200 3400 50  0001 C CNN
+F 3 "" H 3200 3400 50  0001 C CNN
 	1    3200 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,8
+L hallway_backlight-rescue:LED D4,8
 U 1 1 4E2DF4E1
 P 6200 4600
 F 0 "D4,8" H 6200 4700 50  0000 C CNN
 F 1 "LED" H 6200 4500 50  0000 C CNN
+F 2 "" H 6200 4600 50  0001 C CNN
+F 3 "" H 6200 4600 50  0001 C CNN
 	1    6200 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,0
+L hallway_backlight-rescue:LED D3,0
 U 1 1 4E2DF4E1
 P 1400 4200
 F 0 "D3,0" H 1400 4300 50  0000 C CNN
 F 1 "LED" H 1400 4100 50  0000 C CNN
+F 2 "" H 1400 4200 50  0001 C CNN
+F 3 "" H 1400 4200 50  0001 C CNN
 	1    1400 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,8
+L hallway_backlight-rescue:LED D2,8
 U 1 1 4E2DF4E1
 P 6200 3800
 F 0 "D2,8" H 6200 3900 50  0000 C CNN
 F 1 "LED" H 6200 3700 50  0000 C CNN
+F 2 "" H 6200 3800 50  0001 C CNN
+F 3 "" H 6200 3800 50  0001 C CNN
 	1    6200 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,13
+L hallway_backlight-rescue:LED D5,13
 U 1 1 4E2DF4E1
 P 9200 5000
 F 0 "D5,13" H 9200 5100 50  0000 C CNN
 F 1 "LED" H 9200 4900 50  0000 C CNN
+F 2 "" H 9200 5000 50  0001 C CNN
+F 3 "" H 9200 5000 50  0001 C CNN
 	1    9200 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,15
+L hallway_backlight-rescue:LED D0,15
 U 1 1 4E2DF4E1
 P 10400 3000
 F 0 "D0,15" H 10400 3100 50  0000 C CNN
 F 1 "LED" H 10400 2900 50  0000 C CNN
+F 2 "" H 10400 3000 50  0001 C CNN
+F 3 "" H 10400 3000 50  0001 C CNN
 	1    10400 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,10
+L hallway_backlight-rescue:LED D3,10
 U 1 1 4E2DF4E1
 P 7400 4200
 F 0 "D3,10" H 7400 4300 50  0000 C CNN
 F 1 "LED" H 7400 4100 50  0000 C CNN
+F 2 "" H 7400 4200 50  0001 C CNN
+F 3 "" H 7400 4200 50  0001 C CNN
 	1    7400 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,14
+L hallway_backlight-rescue:LED D1,14
 U 1 1 4E2DF4E1
 P 9800 3400
 F 0 "D1,14" H 9800 3500 50  0000 C CNN
 F 1 "LED" H 9800 3300 50  0000 C CNN
+F 2 "" H 9800 3400 50  0001 C CNN
+F 3 "" H 9800 3400 50  0001 C CNN
 	1    9800 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,13
+L hallway_backlight-rescue:LED D4,13
 U 1 1 4E2DF4E1
 P 9200 4600
 F 0 "D4,13" H 9200 4700 50  0000 C CNN
 F 1 "LED" H 9200 4500 50  0000 C CNN
+F 2 "" H 9200 4600 50  0001 C CNN
+F 3 "" H 9200 4600 50  0001 C CNN
 	1    9200 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,13
+L hallway_backlight-rescue:LED D2,13
 U 1 1 4E2DF4E1
 P 9200 3800
 F 0 "D2,13" H 9200 3900 50  0000 C CNN
 F 1 "LED" H 9200 3700 50  0000 C CNN
+F 2 "" H 9200 3800 50  0001 C CNN
+F 3 "" H 9200 3800 50  0001 C CNN
 	1    9200 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,0
+L hallway_backlight-rescue:LED D5,0
 U 1 1 4E2DF4E1
 P 1400 5000
 F 0 "D5,0" H 1400 5100 50  0000 C CNN
 F 1 "LED" H 1400 4900 50  0000 C CNN
+F 2 "" H 1400 5000 50  0001 C CNN
+F 3 "" H 1400 5000 50  0001 C CNN
 	1    1400 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,4
+L hallway_backlight-rescue:LED D1,4
 U 1 1 4E2DF4E1
 P 3800 3400
 F 0 "D1,4" H 3800 3500 50  0000 C CNN
 F 1 "LED" H 3800 3300 50  0000 C CNN
+F 2 "" H 3800 3400 50  0001 C CNN
+F 3 "" H 3800 3400 50  0001 C CNN
 	1    3800 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,12
+L hallway_backlight-rescue:LED D0,12
 U 1 1 4E2DF4E1
 P 8600 3000
 F 0 "D0,12" H 8600 3100 50  0000 C CNN
 F 1 "LED" H 8600 2900 50  0000 C CNN
+F 2 "" H 8600 3000 50  0001 C CNN
+F 3 "" H 8600 3000 50  0001 C CNN
 	1    8600 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,9
+L hallway_backlight-rescue:LED D3,9
 U 1 1 4E2DF4E1
 P 6800 4200
 F 0 "D3,9" H 6800 4300 50  0000 C CNN
 F 1 "LED" H 6800 4100 50  0000 C CNN
+F 2 "" H 6800 4200 50  0001 C CNN
+F 3 "" H 6800 4200 50  0001 C CNN
 	1    6800 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,3
+L hallway_backlight-rescue:LED D2,3
 U 1 1 4E2DF4E1
 P 3200 3800
 F 0 "D2,3" H 3200 3900 50  0000 C CNN
 F 1 "LED" H 3200 3700 50  0000 C CNN
+F 2 "" H 3200 3800 50  0001 C CNN
+F 3 "" H 3200 3800 50  0001 C CNN
 	1    3200 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,9
+L hallway_backlight-rescue:LED D1,9
 U 1 1 4E2DF4E1
 P 6800 3400
 F 0 "D1,9" H 6800 3500 50  0000 C CNN
 F 1 "LED" H 6800 3300 50  0000 C CNN
+F 2 "" H 6800 3400 50  0001 C CNN
+F 3 "" H 6800 3400 50  0001 C CNN
 	1    6800 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,2
+L hallway_backlight-rescue:LED D4,2
 U 1 1 4E2DF4E1
 P 2600 4600
 F 0 "D4,2" H 2600 4700 50  0000 C CNN
 F 1 "LED" H 2600 4500 50  0000 C CNN
+F 2 "" H 2600 4600 50  0001 C CNN
+F 3 "" H 2600 4600 50  0001 C CNN
 	1    2600 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,14
+L hallway_backlight-rescue:LED D2,14
 U 1 1 4E2DF4E1
 P 9800 3800
 F 0 "D2,14" H 9800 3900 50  0000 C CNN
 F 1 "LED" H 9800 3700 50  0000 C CNN
+F 2 "" H 9800 3800 50  0001 C CNN
+F 3 "" H 9800 3800 50  0001 C CNN
 	1    9800 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,3
+L hallway_backlight-rescue:LED D5,3
 U 1 1 4E2DF4E1
 P 3200 5000
 F 0 "D5,3" H 3200 5100 50  0000 C CNN
 F 1 "LED" H 3200 4900 50  0000 C CNN
+F 2 "" H 3200 5000 50  0001 C CNN
+F 3 "" H 3200 5000 50  0001 C CNN
 	1    3200 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,6
+L hallway_backlight-rescue:LED D0,6
 U 1 1 4E2DF4E1
 P 5000 3000
 F 0 "D0,6" H 5000 3100 50  0000 C CNN
 F 1 "LED" H 5000 2900 50  0000 C CNN
+F 2 "" H 5000 3000 50  0001 C CNN
+F 3 "" H 5000 3000 50  0001 C CNN
 	1    5000 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,7
+L hallway_backlight-rescue:LED D1,7
 U 1 1 4E2DF4E1
 P 5600 3400
 F 0 "D1,7" H 5600 3500 50  0000 C CNN
 F 1 "LED" H 5600 3300 50  0000 C CNN
+F 2 "" H 5600 3400 50  0001 C CNN
+F 3 "" H 5600 3400 50  0001 C CNN
 	1    5600 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,9
+L hallway_backlight-rescue:LED D0,9
 U 1 1 4E2DF4E1
 P 6800 3000
 F 0 "D0,9" H 6800 3100 50  0000 C CNN
 F 1 "LED" H 6800 2900 50  0000 C CNN
+F 2 "" H 6800 3000 50  0001 C CNN
+F 3 "" H 6800 3000 50  0001 C CNN
 	1    6800 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,4
+L hallway_backlight-rescue:LED D3,4
 U 1 1 4E2DF4E1
 P 3800 4200
 F 0 "D3,4" H 3800 4300 50  0000 C CNN
 F 1 "LED" H 3800 4100 50  0000 C CNN
+F 2 "" H 3800 4200 50  0001 C CNN
+F 3 "" H 3800 4200 50  0001 C CNN
 	1    3800 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,4
+L hallway_backlight-rescue:LED D2,4
 U 1 1 4E2DF4E1
 P 3800 3800
 F 0 "D2,4" H 3800 3900 50  0000 C CNN
 F 1 "LED" H 3800 3700 50  0000 C CNN
+F 2 "" H 3800 3800 50  0001 C CNN
+F 3 "" H 3800 3800 50  0001 C CNN
 	1    3800 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,9
+L hallway_backlight-rescue:LED D5,9
 U 1 1 4E2DF4E1
 P 6800 5000
 F 0 "D5,9" H 6800 5100 50  0000 C CNN
 F 1 "LED" H 6800 4900 50  0000 C CNN
+F 2 "" H 6800 5000 50  0001 C CNN
+F 3 "" H 6800 5000 50  0001 C CNN
 	1    6800 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,7
+L hallway_backlight-rescue:LED D4,7
 U 1 1 4E2DF4E1
 P 5600 4600
 F 0 "D4,7" H 5600 4700 50  0000 C CNN
 F 1 "LED" H 5600 4500 50  0000 C CNN
+F 2 "" H 5600 4600 50  0001 C CNN
+F 3 "" H 5600 4600 50  0001 C CNN
 	1    5600 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,6
+L hallway_backlight-rescue:LED D5,6
 U 1 1 4E2DF4E1
 P 5000 5000
 F 0 "D5,6" H 5000 5100 50  0000 C CNN
 F 1 "LED" H 5000 4900 50  0000 C CNN
+F 2 "" H 5000 5000 50  0001 C CNN
+F 3 "" H 5000 5000 50  0001 C CNN
 	1    5000 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,3
+L hallway_backlight-rescue:LED D0,3
 U 1 1 4E2DF4E1
 P 3200 3000
 F 0 "D0,3" H 3200 3100 50  0000 C CNN
 F 1 "LED" H 3200 2900 50  0000 C CNN
+F 2 "" H 3200 3000 50  0001 C CNN
+F 3 "" H 3200 3000 50  0001 C CNN
 	1    3200 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,14
+L hallway_backlight-rescue:LED D3,14
 U 1 1 4E2DF4E1
 P 9800 4200
 F 0 "D3,14" H 9800 4300 50  0000 C CNN
 F 1 "LED" H 9800 4100 50  0000 C CNN
+F 2 "" H 9800 4200 50  0001 C CNN
+F 3 "" H 9800 4200 50  0001 C CNN
 	1    9800 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,2
+L hallway_backlight-rescue:LED D1,2
 U 1 1 4E2DF4E1
 P 2600 3400
 F 0 "D1,2" H 2600 3500 50  0000 C CNN
 F 1 "LED" H 2600 3300 50  0000 C CNN
+F 2 "" H 2600 3400 50  0001 C CNN
+F 3 "" H 2600 3400 50  0001 C CNN
 	1    2600 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,9
+L hallway_backlight-rescue:LED D4,9
 U 1 1 4E2DF4E1
 P 6800 4600
 F 0 "D4,9" H 6800 4700 50  0000 C CNN
 F 1 "LED" H 6800 4500 50  0000 C CNN
+F 2 "" H 6800 4600 50  0001 C CNN
+F 3 "" H 6800 4600 50  0001 C CNN
 	1    6800 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,3
+L hallway_backlight-rescue:LED D3,3
 U 1 1 4E2DF4E1
 P 3200 4200
 F 0 "D3,3" H 3200 4300 50  0000 C CNN
 F 1 "LED" H 3200 4100 50  0000 C CNN
+F 2 "" H 3200 4200 50  0001 C CNN
+F 3 "" H 3200 4200 50  0001 C CNN
 	1    3200 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,9
+L hallway_backlight-rescue:LED D2,9
 U 1 1 4E2DF4E1
 P 6800 3800
 F 0 "D2,9" H 6800 3900 50  0000 C CNN
 F 1 "LED" H 6800 3700 50  0000 C CNN
+F 2 "" H 6800 3800 50  0001 C CNN
+F 3 "" H 6800 3800 50  0001 C CNN
 	1    6800 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,12
+L hallway_backlight-rescue:LED D5,12
 U 1 1 4E2DF4E1
 P 8600 5000
 F 0 "D5,12" H 8600 5100 50  0000 C CNN
 F 1 "LED" H 8600 4900 50  0000 C CNN
+F 2 "" H 8600 5000 50  0001 C CNN
+F 3 "" H 8600 5000 50  0001 C CNN
 	1    8600 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,4
+L hallway_backlight-rescue:LED D4,4
 U 1 1 4E2DF4E1
 P 3800 4600
 F 0 "D4,4" H 3800 4700 50  0000 C CNN
 F 1 "LED" H 3800 4500 50  0000 C CNN
+F 2 "" H 3800 4600 50  0001 C CNN
+F 3 "" H 3800 4600 50  0001 C CNN
 	1    3800 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,0
+L hallway_backlight-rescue:LED D0,0
 U 1 1 4E2DF4E1
 P 1400 3000
 F 0 "D0,0" H 1400 3100 50  0000 C CNN
 F 1 "LED" H 1400 2900 50  0000 C CNN
+F 2 "" H 1400 3000 50  0001 C CNN
+F 3 "" H 1400 3000 50  0001 C CNN
 	1    1400 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,13
+L hallway_backlight-rescue:LED D3,13
 U 1 1 4E2DF4E1
 P 9200 4200
 F 0 "D3,13" H 9200 4300 50  0000 C CNN
 F 1 "LED" H 9200 4100 50  0000 C CNN
+F 2 "" H 9200 4200 50  0001 C CNN
+F 3 "" H 9200 4200 50  0001 C CNN
 	1    9200 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,13
+L hallway_backlight-rescue:LED D1,13
 U 1 1 4E2DF4E1
 P 9200 3400
 F 0 "D1,13" H 9200 3500 50  0000 C CNN
 F 1 "LED" H 9200 3300 50  0000 C CNN
+F 2 "" H 9200 3400 50  0001 C CNN
+F 3 "" H 9200 3400 50  0001 C CNN
 	1    9200 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,14
+L hallway_backlight-rescue:LED D4,14
 U 1 1 4E2DF4E1
 P 9800 4600
 F 0 "D4,14" H 9800 4700 50  0000 C CNN
 F 1 "LED" H 9800 4500 50  0000 C CNN
+F 2 "" H 9800 4600 50  0001 C CNN
+F 3 "" H 9800 4600 50  0001 C CNN
 	1    9800 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,10
+L hallway_backlight-rescue:LED D2,10
 U 1 1 4E2DF4E1
 P 7400 3800
 F 0 "D2,10" H 7400 3900 50  0000 C CNN
 F 1 "LED" H 7400 3700 50  0000 C CNN
+F 2 "" H 7400 3800 50  0001 C CNN
+F 3 "" H 7400 3800 50  0001 C CNN
 	1    7400 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,15
+L hallway_backlight-rescue:LED D5,15
 U 1 1 4E2DF4E1
 P 10400 5000
 F 0 "D5,15" H 10400 5100 50  0000 C CNN
 F 1 "LED" H 10400 4900 50  0000 C CNN
+F 2 "" H 10400 5000 50  0001 C CNN
+F 3 "" H 10400 5000 50  0001 C CNN
 	1    10400 5000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0,13
+L hallway_backlight-rescue:LED D0,13
 U 1 1 4E2DF4E1
 P 9200 3000
 F 0 "D0,13" H 9200 3100 50  0000 C CNN
 F 1 "LED" H 9200 2900 50  0000 C CNN
+F 2 "" H 9200 3000 50  0001 C CNN
+F 3 "" H 9200 3000 50  0001 C CNN
 	1    9200 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3,8
+L hallway_backlight-rescue:LED D3,8
 U 1 1 4E2DF4E1
 P 6200 4200
 F 0 "D3,8" H 6200 4300 50  0000 C CNN
 F 1 "LED" H 6200 4100 50  0000 C CNN
+F 2 "" H 6200 4200 50  0001 C CNN
+F 3 "" H 6200 4200 50  0001 C CNN
 	1    6200 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,0
+L hallway_backlight-rescue:LED D2,0
 U 1 1 4E2DF4E1
 P 1400 3800
 F 0 "D2,0" H 1400 3900 50  0000 C CNN
 F 1 "LED" H 1400 3700 50  0000 C CNN
+F 2 "" H 1400 3800 50  0001 C CNN
+F 3 "" H 1400 3800 50  0001 C CNN
 	1    1400 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1,8
+L hallway_backlight-rescue:LED D1,8
 U 1 1 4E2DF4E1
 P 6200 3400
 F 0 "D1,8" H 6200 3500 50  0000 C CNN
 F 1 "LED" H 6200 3300 50  0000 C CNN
+F 2 "" H 6200 3400 50  0001 C CNN
+F 3 "" H 6200 3400 50  0001 C CNN
 	1    6200 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D4,3
+L hallway_backlight-rescue:LED D4,3
 U 1 1 4E2DF4E1
 P 3200 4600
 F 0 "D4,3" H 3200 4700 50  0000 C CNN
 F 1 "LED" H 3200 4500 50  0000 C CNN
+F 2 "" H 3200 4600 50  0001 C CNN
+F 3 "" H 3200 4600 50  0001 C CNN
 	1    3200 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2,15
+L hallway_backlight-rescue:LED D2,15
 U 1 1 4E2DF4E1
 P 10400 3800
 F 0 "D2,15" H 10400 3900 50  0000 C CNN
 F 1 "LED" H 10400 3700 50  0000 C CNN
+F 2 "" H 10400 3800 50  0001 C CNN
+F 3 "" H 10400 3800 50  0001 C CNN
 	1    10400 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5,2
+L hallway_backlight-rescue:LED D5,2
 U 1 1 4E2DF4E1
 P 2600 5000
 F 0 "D5,2" H 2600 5100 50  0000 C CNN
 F 1 "LED" H 2600 4900 50  0000 C CNN
+F 2 "" H 2600 5000 50  0001 C CNN
+F 3 "" H 2600 5000 50  0001 C CNN
 	1    2600 5000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	10900 5000 10900 4600
+Wire Wire Line
+	10900 4600 10900 4200
+Wire Wire Line
+	10900 4200 10900 3800
+Wire Wire Line
+	10900 3800 10900 3400
+Wire Wire Line
+	10900 3400 10900 3000
+Wire Wire Line
+	900  4600 900  5000
+Wire Wire Line
+	900  4200 900  4600
+Wire Wire Line
+	900  3800 900  4200
+Wire Wire Line
+	900  3400 900  3800
+Wire Wire Line
+	900  3000 900  3400
 $EndSCHEMATC

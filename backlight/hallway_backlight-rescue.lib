@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# hallway_backlight-rescue_CONN_2
+# CONN_2
 #
-DEF hallway_backlight-rescue_CONN_2 P 0 40 Y N 1 F N
+DEF CONN_2 P 0 40 Y N 1 F N
 F0 "P" -50 0 40 V V C CNN
-F1 "hallway_backlight-rescue_CONN_2" 50 0 40 V V C CNN
+F1 "CONN_2" 50 0 40 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -15,11 +15,11 @@ X PM 2 -350 -100 250 R 60 60 1 1 P I
 ENDDRAW
 ENDDEF
 #
-# hallway_backlight-rescue_GND
+# GND
 #
-DEF ~hallway_backlight-rescue_GND #PWR 0 0 Y Y 1 F P
+DEF ~GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 0 30 H I C CNN
-F1 "hallway_backlight-rescue_GND" 0 -70 30 H I C CNN
+F1 "GND" 0 -70 30 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -28,11 +28,11 @@ X GND 1 0 0 0 U 30 30 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# hallway_backlight-rescue_LED
+# LED
 #
-DEF hallway_backlight-rescue_LED D 0 40 Y N 1 F N
+DEF LED D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "hallway_backlight-rescue_LED" 0 -100 50 H V C CNN
+F1 "LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -54,11 +54,11 @@ X K 2 200 0 150 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# hallway_backlight-rescue_PWR_FLAG
+# PWR_FLAG
 #
-DEF hallway_backlight-rescue_PWR_FLAG #FLG 0 0 N N 1 F P
+DEF PWR_FLAG #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 270 30 H I C CNN
-F1 "hallway_backlight-rescue_PWR_FLAG" 0 230 30 H V C CNN
+F1 "PWR_FLAG" 0 230 30 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
