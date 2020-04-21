@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name hallway_panels_arena)(type Legacy)(uri ${KIPRJMOD}/hallway_panels_arena.lib)(options "")(descr ""))
+)
