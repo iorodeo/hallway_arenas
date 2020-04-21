@@ -89,7 +89,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "gerber_v1p1/"))
+      (outputdirectory "gerber_v1p1_dickinson/"))
   )
 
   (net 0 "")
@@ -1623,7 +1623,7 @@
   (gr_text "5V PWR" (at 86.868 68.961 90) (layer F.SilkS)
     (effects (font (size 2.032 1.524) (thickness 0.3048)))
   )
-  (gr_text "IO Rodeo Inc. " (at 125.73 67.437) (layer F.SilkS)
+  (gr_text "Dickinson Lab" (at 125.73 67.437) (layer F.SilkS)
     (effects (font (size 2.032 1.524) (thickness 0.3048)))
   )
   (gr_text "Hallway Panels Arena V1.1" (at 124.206 64.008) (layer F.SilkS)
